@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet Dr. Mispa Afueh, DNP, CRNP, FNP-BC, RNC-MNN at All About Women's Health LLC. Expert Board-Certified Nurse Practitioner providing comprehensive women's healthcare in MD, DC & VA.">
+    <link rel="canonical" href="https://allaboutwomenshealth.com/provider.html">
+    <title>Meet Your Provider | Dr. Mispa Afueh, DNP | All About Women's Health LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        img { max-width: 100%; height: auto; display: block; }
+        
+        html { scroll-behavior: smooth; }
+
+        :root {
+            --primary: #320F2F;        /* Deep Burgundy/Plum */
+            --accent: #8E4B7A;         /* Rich Orchid/Plum Accent */
+            --accent-hover: #783D67;   
+            --bg-linen: #FAF7F2;       /* Warm Linen Background */
+            --bg-lavender: #44293D;    /* Dark Creamish Plum */
+            --bg-card: #FFFFFF;        
+            --text-dark: #320F2F;      
+            --text-muted: #66525C;     
+            --text-light: #FFFFFF;     
+            --font-serif: 'Cormorant Garamond', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', Helvetica, Arial, sans-serif;
+            --transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+            --shadow-subtle: 0 10px 30px rgba(50, 15, 47, 0.05);
+            --shadow-hover: 0 20px 40px rgba(50, 15, 47, 0.12);
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--text-dark);
+            background-color: var(--bg-linen);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        h1, h2, h3, h4, .serif-font {
+            font-family: var(--font-serif);
+            font-weight: 600;
+            line-height: 1.25;
+        }
+
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        button { cursor: pointer; border: none; background: none; font-family: var(--font-sans); }
+
+        /* Keyframe Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 0 0 rgba(142, 75, 122, 0.3); }
+            70% { box-shadow: 0 0 0 12px rgba(142, 75, 122, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(142, 75, 122, 0); }
+        }
+
+        @keyframes floatIcon {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+
+        .animate-fade-1 { animation: fadeInUp 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+        .animate-fade-2 { animation: fadeInUp 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+        .animate-fade-3 { animation: fadeInUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+
+        /* Unified Header Navigation */
+        header {
+            background-color: rgba(250, 247, 242, 0.96);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(50, 15, 47, 0.06);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .brand-logo-img {
+            height: 44px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--text-dark);
+            padding: 4px 0;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent);
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--accent);
+            border-radius: 2px;
+        }
+
+        .btn-pill {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--text-light);
+            border-radius: 50px;
+            padding: 8px 18px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            box-shadow: 0 4px 12px rgba(142, 75, 122, 0.25);
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+        }
+
+        .btn-pill:hover, .btn-pill:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 22px rgba(142, 75, 122, 0.4);
+            background-color: var(--accent-hover);
+        }
+
+        /* Hero Provider Intro Section */
+        .provider-hero {
+            padding: 60px 0;
+            display: grid;
+            grid-template-columns: 0.85fr 1.15fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .provider-portrait-wrapper {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 45px rgba(50, 15, 47, 0.15);
+            border: 6px solid #FFFFFF;
+        }
+
+        .provider-portrait-img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            object-position: center top;
+            transition: var(--transition);
+        }
+
+        .provider-portrait-wrapper:hover .provider-portrait-img {
+            transform: scale(1.03);
+        }
+
+        .credential-floating-badge {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: rgba(50, 15, 47, 0.88);
+            backdrop-filter: blur(10px);
+            color: #FFFFFF;
+            padding: 14px 20px;
+            border-radius: 16px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .cred-item-val {
+            font-size: 14px;
+            font-weight: 800;
+            color: #FFFFFF;
+            letter-spacing: 0.05em;
+        }
+
+        .cred-item-lbl {
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.7);
+            text-transform: uppercase;
+        }
+
+        .provider-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(142, 75, 122, 0.08);
+            border: 1px solid rgba(142, 75, 122, 0.2);
+            color: var(--accent);
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            animation: pulseGlow 3s infinite;
+        }
+
+        .provider-name {
+            font-size: 40px;
+            color: var(--primary);
+            margin-bottom: 6px;
+            letter-spacing: -0.01em;
+        }
+
+        .provider-subtitle {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 20px;
+        }
+
+        .provider-bio-text {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        /* Philosophy Banner */
+        .philosophy-banner {
+            background-color: #44293D;
+            background: linear-gradient(135deg, #320F2F 0%, #44293D 100%);
+            color: #FFFFFF;
+            border-radius: 20px;
+            padding: 45px;
+            text-align: center;
+            margin-bottom: 70px;
+            box-shadow: 0 15px 35px rgba(50, 15, 47, 0.2);
+        }
+
+        .philosophy-quote {
+            font-family: var(--font-serif);
+            font-size: 24px;
+            color: #FFFFFF !important;
+            font-style: italic;
+            max-width: 840px;
+            margin: 0 auto 12px auto;
+            line-height: 1.45;
+        }
+
+        .philosophy-author {
+            font-size: 13px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.85);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        /* 9 Areas of Expertise 3x3 Grid */
+        .expertise-grid-9 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-bottom: 70px;
+        }
+
+        .expertise-card {
+            background-color: var(--bg-card);
+            border-radius: 18px;
+            padding: 32px 24px;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid rgba(50, 15, 47, 0.05);
+            border-left: 4px solid var(--accent);
+            transition: var(--transition);
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .expertise-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-left-color: var(--primary);
+        }
+
+        .expertise-icon-bubble {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(142, 75, 122, 0.1), rgba(50, 15, 47, 0.05));
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .expertise-title {
+            font-size: 17.5px;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .expertise-desc {
+            font-size: 12.5px;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* 13 Clinical Specialties Checklist Section */
+        .specialties-section {
+            background-color: var(--bg-card);
+            border-radius: 20px;
+            padding: 45px;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid rgba(50, 15, 47, 0.05);
+            margin-bottom: 70px;
+        }
+
+        .specialties-grid-13 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px 30px;
+            margin-top: 28px;
+        }
+
+        .specialty-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 16px;
+            background-color: var(--bg-linen);
+            border-radius: 12px;
+            border: 1px solid rgba(50, 15, 47, 0.04);
+            transition: var(--transition);
+        }
+
+        .specialty-item:hover {
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 14px rgba(50, 15, 47, 0.06);
+            transform: translateY(-2px);
+        }
+
+        .check-icon {
+            color: var(--accent);
+            font-weight: 800;
+            font-size: 16px;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        .specialty-text {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* Credentials & Education 3 Column Grid */
+        .credentials-3col-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-bottom: 70px;
+        }
+
+        .cred-box {
+            background-color: var(--bg-card);
+            border-radius: 18px;
+            padding: 32px 24px;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid rgba(50, 15, 47, 0.05);
+        }
+
+        .cred-box-title {
+            font-size: 22px;
+            color: var(--primary);
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(142, 75, 122, 0.15);
+        }
+
+        .cred-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .cred-list-item {
+            font-size: 13.5px;
+            color: var(--text-dark);
+            line-height: 1.5;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .bullet-dot {
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        /* Practice Demographics Strip */
+        .demographics-strip {
+            background-color: var(--bg-card);
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid rgba(50, 15, 47, 0.05);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 70px;
+        }
+
+        .demo-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .demo-icon {
+            font-size: 26px;
+        }
+
+        .demo-label {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--accent);
+            letter-spacing: 0.06em;
+        }
+
+        .demo-val {
+            font-size: 14.5px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Bottom CTA Banner */
+        .provider-cta-banner {
+            background-color: #44293D;
+            background: linear-gradient(135deg, #320F2F 0%, #44293D 100%);
+            color: #FFFFFF;
+            border-radius: 20px;
+            padding: 50px 40px;
+            text-align: center;
+            margin-bottom: 80px;
+            box-shadow: 0 15px 35px rgba(50, 15, 47, 0.2);
+        }
+
+        .cta-banner-title {
+            font-size: 32px;
+            color: #FFFFFF !important;
+            margin-bottom: 12px;
+        }
+
+        .cta-banner-text {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.9) !important;
+            max-width: 600px;
+            margin: 0 auto 28px auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            padding: 80px 0 40px 0;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 13px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(50, 15, 47, 0.6);
+            backdrop-filter: blur(5px);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-container {
+            background-color: var(--bg-linen);
+            border-radius: 16px;
+            width: 90%;
+            max-width: 520px;
+            padding: 40px;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 26px;
+            color: var(--primary);
+        }
+
+        .form-group { margin-bottom: 18px; }
+        .form-label { display: block; font-size: 11px; font-weight: 700; text-transform: uppercase; margin-bottom: 6px; color: var(--primary); }
+        .form-input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(50,15,47,0.15); font-family: var(--font-sans); }
+        .btn-submit { width: 100%; background-color: var(--primary); color: #fff; padding: 14px; border-radius: 30px; font-weight: 700; font-size: 12px; text-transform: uppercase; }
+
+        @media (max-width: 900px) {
+            .provider-hero, .expertise-grid-9, .specialties-grid-13, .credentials-3col-grid, .footer-grid { grid-template-columns: 1fr; }
+            .provider-name { font-size: 32px; }
+            .provider-portrait-img { height: 380px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Unified Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="All About Women's Health Homepage">
+                <img src="women-health-logo-transparent.png" alt="All About Women's Health Logo" class="brand-logo-img">
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="provider.html" class="active">Provider</a>
+                <a href="services.html">Services</a>
+                <a href="patients.html">Patients</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <button class="btn-pill" onclick="openBookingModal()">Book Appointment</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Provider Intro Section -->
+        <section class="provider-hero animate-fade-1">
+            <div class="provider-portrait-wrapper">
+                <img src="provider_portrait.jpg" alt="Dr. Mispa Afueh, DNP - Family Nurse Practitioner" class="provider-portrait-img">
+                <div class="credential-floating-badge">
+                    <div>
+                        <div class="cred-item-val">DNP</div>
+                        <div class="cred-item-lbl">Doctorate</div>
+                    </div>
+                    <div>
+                        <div class="cred-item-val">FNP-BC</div>
+                        <div class="cred-item-lbl">Board Certified</div>
+                    </div>
+                    <div>
+                        <div class="cred-item-val">RNC-MNN</div>
+                        <div class="cred-item-lbl">Maternal Specialty</div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="provider-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Meet Your Provider
+                </div>
+                <h1 class="provider-name">Dr. Mispa Afueh, DNP, CRNP, FNP-BC, RNC-MNN</h1>
+                <div class="provider-subtitle">Doctor of Nursing Practice &bull; Board-Certified Family Nurse Practitioner</div>
+                
+                <p class="provider-bio-text">
+                    Dr. Mispa Afueh is a dedicated, board-certified Doctor of Nursing Practice (DNP) and Family Nurse Practitioner (FNP-BC) with extensive experience in women's healthcare, maternal-child health, and preventive wellness. She is committed to providing compassionate, evidence-based, and patient-centered care to women across all stages of life.
+                </p>
+                <p class="provider-bio-text">
+                    Dr. Afueh earned her Doctor of Nursing Practice (DNP) degree from Frontier Nursing University and her Family Nurse Practitioner (FNP) post-graduate certificate and Bachelor of Science in Nursing (BSN) from Bowie State University. Her clinical background spans comprehensive gynecological care, family planning, prenatal and postpartum management, hormone health, and disease prevention.
+                </p>
+                <p class="provider-bio-text">
+                    Holding specialty certification in Maternal-Newborn Nursing (RNC-MNN), Dr. Afueh combines advanced clinical expertise with a warm, supportive bedside manner. She believes in empowering women through education, respectful communication, and collaborative decision-making, ensuring every patient feels heard, valued, and well-cared for.
+                </p>
+
+                <div style="margin-top: 24px; display: flex; gap: 14px; flex-wrap: wrap;">
+                    <button class="btn-pill" onclick="openBookingModal()" style="padding: 12px 24px;">Book Consultation With Dr. Afueh</button>
+                    <a href="#clinical-specialties" class="btn-pill" style="background: rgba(142,75,122,0.12); color: var(--accent); border: 1px solid rgba(142,75,122,0.25); padding: 12px 24px;">View 13 Clinical Specialties &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy of Care Banner -->
+        <section class="philosophy-banner animate-fade-2">
+            <blockquote class="philosophy-quote">
+                "Healthcare is a collaborative journey between the provider and the patient. My mission is to create a safe, welcoming, and non-judgmental space where women receive personalized care tailored to their unique physical, emotional, and reproductive health needs."
+            </blockquote>
+            <div class="philosophy-author">— Dr. Mispa Afueh, DNP, CRNP, FNP-BC, RNC-MNN</div>
+        </section>
+
+        <!-- 9 Areas of Expertise (3x3 Grid) -->
+        <section class="animate-fade-2">
+            <div style="text-align: center; margin-bottom: 36px;">
+                <h2 style="font-size: 32px; color: var(--primary);">Areas of Clinical Expertise</h2>
+                <p style="font-size: 14px; color: var(--text-muted);">Comprehensive women's healthcare services delivered with excellence:</p>
+            </div>
+
+            <div class="expertise-grid-9">
+                <!-- 1 -->
+                <div class="expertise-card">
+                    <div class="expertise-icon-bubble">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="expertise-title">Women's Preventive Healthcare</h3>
+                        <p class="expertise-desc">Routine well-woman exams, cancer screenings, and wellness roadmaps.</p>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="expertise-card">
+                    <div class="expertise-icon-bubble">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="expertise-title">Gynecology</h3>
+                        <p class="expertise-desc">Comprehensive evaluation and treatment of gynecological symptoms.</p>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="expertise-card">
+                    <div class="expertise-icon-bubble">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="expertise-title">Family Planning</h3>
+                        <p class="expertise-desc">Tailored reproductive planning and contraceptive guidance.</p>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="expertise-card">
+                    <div class="expertise-icon-bubble">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="expertise-title">Prenatal & Postpartum Care</h3>
+                        <p class="expertise-desc">Maternal health guidance, gestational checks, and recovery support.</p>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="expertise-card">
+                    <div class="expertise-icon-bubble">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="expertise-title">Menopause Management</h3>
+                        <p class="expertise-desc">Perimenopause relief, symptom mitigation, and osteoporosis prevention.</p>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="expertise-card">
+                    <div class="expertise-icon-bubble">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="expertise-title">Hormone Therapy (BHRT)</h3>
+                        <p class="expertise-desc">Individualized bioidentical hormone balancing and symptom therapy.</p>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="expertise-card">
+                    <div class="expertise-icon-bubble">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="expertise-title">STI Testing & Treatment</h3>
+                        <p class="expertise-desc">Confidential screening, diagnosis, and treatment for infections.</p>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="expertise-card">
+                    <div class="expertise-icon-bubble">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="expertise-title">Contraceptive Counseling</h3>
+                        <p class="expertise-desc">Educational counseling matching your lifestyle and medical needs.</p>
+                    </div>
+                </div>
+
+                <!-- 9 -->
+                <div class="expertise-card">
+                    <div class="expertise-icon-bubble">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="expertise-title">IUD & Nexplanon Services</h3>
+                        <p class="expertise-desc">Expert insertion, placement check, and removal of LARC devices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 13 Clinical Specialties Checklist Section -->
+        <section class="specialties-section animate-fade-3" id="clinical-specialties">
+            <div style="text-align: center;">
+                <h2 style="font-size: 32px; color: var(--primary);">Full Scope of Clinical Specialties</h2>
+                <p style="font-size: 14px; color: var(--text-muted);">Directly matching the clinical scope outlined in our practice proposal:</p>
+            </div>
+
+            <div class="specialties-grid-13">
+                <div class="specialty-item">
+                    <span class="check-icon">✓</span>
+                    <span class="specialty-text">Annual Well-Woman Exams & Routine Checkups</span>
+                </div>
+                <div class="specialty-item">
+                    <span class="check-icon">✓</span>
+                    <span class="specialty-text">Preventive Women's Healthcare & Disease Prevention</span>
+                </div>
+                <div class="specialty-item">
+                    <span class="check-icon">✓</span>
+                    <span class="specialty-text">Gynecologic Care & Symptom Management</span>
+                </div>
+                <div class="specialty-item">
+                    <span class="check-icon">✓</span>
+                    <span class="specialty-text">Cervical Cancer Screening (Pap Smears & HPV Testing)</span>
+                </div>
+                <div class="specialty-item">
+                    <span class="check-icon">✓</span>
+                    <span class="specialty-text">Breast Health Screening & Clinical Exams</span>
+                </div>
+                <div class="specialty-item">
+                    <span class="check-icon">✓</span>
+                    <span class="specialty-text">Birth Control & Family Planning Counseling</span>
+                </div>
+                <div class="specialty-item">
+                    <span class="check-icon">✓</span>
+                    <span class="specialty-text">STI Screening, Testing & Treatment</span>
+                </div>
+                <div class="specialty-item">
+                    <span class="check-icon">✓</span>
+                    <span class="specialty-text">Menopause Management & Bioidentical Hormone Therapy (BHRT)</span>
+                </div>
+                <div class="specialty-item">
+                    <span class="check-icon">✓</span>
+                    <span class="specialty-text">PCOS Evaluation, Diagnosis & Management</span>
+                </div>
+                <div class="specialty-item">
+                    <span class="check-icon">✓</span>
+                    <span class="specialty-text">Endometriosis Management & Pelvic Pain Evaluation</span>
+                </div>
+                <div class="specialty-item">
+                    <span class="check-icon">✓</span>
+                    <span class="specialty-text">Prenatal & Postpartum Care & Guidance</span>
+                </div>
+                <div class="specialty-item">
+                    <span class="check-icon">✓</span>
+                    <span class="specialty-text">Adolescent Gynecology (Ages 13+)</span>
+                </div>
+                <div class="specialty-item" style="grid-column: span 2;">
+                    <span class="check-icon">✓</span>
+                    <span class="specialty-text">Health Promotion, Wellness & Nutritional Education</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credentials, Education & Memberships (3 Column Grid) -->
+        <section class="credentials-3col-grid animate-fade-3">
+            <!-- Academic Education -->
+            <div class="cred-box">
+                <h3 class="cred-box-title">Academic Education</h3>
+                <ul class="cred-list">
+                    <li class="cred-list-item">
+                        <span class="bullet-dot">🎓</span>
+                        <div><strong>Doctor of Nursing Practice (DNP)</strong><br><span style="color: var(--text-muted); font-size: 12px;">Frontier Nursing University</span></div>
+                    </li>
+                    <li class="cred-list-item">
+                        <span class="bullet-dot">🎓</span>
+                        <div><strong>Family Nurse Practitioner (FNP) Certificate</strong><br><span style="color: var(--text-muted); font-size: 12px;">Bowie State University</span></div>
+                    </li>
+                    <li class="cred-list-item">
+                        <span class="bullet-dot">🎓</span>
+                        <div><strong>Bachelor of Science in Nursing (BSN)</strong><br><span style="color: var(--text-muted); font-size: 12px;">Bowie State University</span></div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Clinical Certifications -->
+            <div class="cred-box">
+                <h3 class="cred-box-title">Board Certifications</h3>
+                <ul class="cred-list">
+                    <li class="cred-list-item">
+                        <span class="bullet-dot">🏅</span>
+                        <div><strong>FNP-BC</strong> — Family Nurse Practitioner Board Certified (ANCC)</div>
+                    </li>
+                    <li class="cred-list-item">
+                        <span class="bullet-dot">🏅</span>
+                        <div><strong>RNC-MNN</strong> — Maternal-Newborn Nursing Certification (NCC)</div>
+                    </li>
+                    <li class="cred-list-item">
+                        <span class="bullet-dot">🏅</span>
+                        <div><strong>BLS</strong> — Basic Life Support Certified</div>
+                    </li>
+                    <li class="cred-list-item">
+                        <span class="bullet-dot">🏅</span>
+                        <div><strong>NRP</strong> — Neonatal Resuscitation Program Provider</div>
+                    </li>
+                    <li class="cred-list-item">
+                        <span class="bullet-dot">🏅</span>
+                        <div><strong>STABLE</strong> — STABLE Program Certified Provider</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Professional Memberships -->
+            <div class="cred-box">
+                <h3 class="cred-box-title">Professional Associations</h3>
+                <ul class="cred-list">
+                    <li class="cred-list-item">
+                        <span class="bullet-dot">✦</span>
+                        <div><strong>AANP</strong> — American Association of Nurse Practitioners</div>
+                    </li>
+                    <li class="cred-list-item">
+                        <span class="bullet-dot">✦</span>
+                        <div><strong>ACNM</strong> — American College of Nurse-Midwives (Affiliate)</div>
+                    </li>
+                    <li class="cred-list-item">
+                        <span class="bullet-dot">✦</span>
+                        <div><strong>AWHONN</strong> — Association of Women's Health, Obstetric & Neonatal Nurses</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Practice Demographics Strip -->
+        <section class="demographics-strip animate-fade-3">
+            <div class="demo-item">
+                <span class="demo-icon">🌐</span>
+                <div>
+                    <div class="demo-label">Languages Spoken</div>
+                    <div class="demo-val">English</div>
+                </div>
+            </div>
+            <div class="demo-item">
+                <span class="demo-icon">👥</span>
+                <div>
+                    <div class="demo-label">Patient Population</div>
+                    <div class="demo-val">Women & Girls Ages 13+</div>
+                </div>
+            </div>
+            <div class="demo-item">
+                <span class="demo-icon">📍</span>
+                <div>
+                    <div class="demo-label">Service Area</div>
+                    <div class="demo-val">Maryland, Washington DC & Virginia</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Provider CTA Banner -->
+        <section class="provider-cta-banner">
+            <h2 class="cta-banner-title">Schedule Your Visit With Dr. Mispa Afueh</h2>
+            <p class="cta-banner-text">
+                Experience personalized, compassionate healthcare tailored to your unique wellness goals.
+            </p>
+            <div>
+                <button class="btn-pill" onclick="openBookingModal()" style="padding: 12px 30px; font-size: 12px;">Request Clinical Appointment</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                    <img src="women-health-tree-icon.png" alt="Logo Icon" style="width: 44px;">
+                    <span style="font-weight: 700; color: #fff; font-size: 12px;">ALL ABOUT WOMENS HEALTH LLC</span>
+                </div>
+                <p>Caring for Women. Empowering Health. Inspiring Wellness.</p>
+                <p style="font-size: 12px; margin-top: 10px; color: rgba(255,255,255,0.5);">Address: 133 Main St. Suite 101, Bowie, MD 20715<br>Phone: (301) 555-4567 | Serving MD, DC & VA</p>
+            </div>
+
+            <div>
+                <h4 style="color: #fff; margin-bottom: 16px;">Office Hours</h4>
+                <p>Mon - Fri: 9:00 AM – 5:00 PM<br>Saturday: 10:00 AM – 2:00 PM<br>Sunday: Closed</p>
+            </div>
+
+            <div>
+                <h4 style="color: #fff; margin-bottom: 16px;">Quick Links</h4>
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <a href="index.html" style="color: rgba(255,255,255,0.7);">Home</a>
+                    <a href="about.html" style="color: rgba(255,255,255,0.7);">About Us</a>
+                    <a href="services.html" style="color: rgba(255,255,255,0.7);">Clinical Services</a>
+                    <a href="patients.html" style="color: rgba(255,255,255,0.7);">New Patients Info</a>
+                    <a href="contact.html" style="color: rgba(255,255,255,0.7);">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <div>&copy; 2026 All About Women's Health LLC. All rights reserved.</div>
+            <div>Built for WCAG 2.1 AA Accessibility & HIPAA Compliance.</div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeBookingModal()">&times;</button>
+            <h3 class="serif-font" style="font-size: 26px; color: var(--primary); text-align: center; margin-bottom: 6px;">Schedule Appointment</h3>
+            <p style="font-size: 13px; color: var(--text-muted); text-align: center; margin-bottom: 24px;">Complete the form below to secure your clinical consultation.</p>
+            <form id="appointmentForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label class="form-label" for="fullName">Full Name</label>
+                    <input type="text" id="fullName" class="form-input" required placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email Address</label>
+                    <input type="email" id="email" class="form-input" required placeholder="jane@example.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-input" required placeholder="(301) 555-0199">
+                </div>
+                <button type="submit" class="btn-submit">Request Appointment Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const bookingModal = document.getElementById("bookingModal");
+        function openBookingModal() { bookingModal.classList.add("active"); }
+        function closeBookingModal() { bookingModal.classList.remove("active"); }
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            alert("Thank you! Your appointment request has been submitted. Our office will contact you shortly.");
+            closeBookingModal();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about All About Women's Health LLC mission, vision, and core values. Providing accessible, compassionate OB/GYN healthcare in MD, DC & VA.">
+    <link rel="canonical" href="https://allaboutwomenshealth.com/about.html">
+    <title>About Us & Practice Values | All About Women's Health LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        img { max-width: 100%; height: auto; display: block; }
+        
+        html { scroll-behavior: smooth; }
+
+        :root {
+            --primary: #320F2F;        /* Deep Burgundy/Plum */
+            --accent: #8E4B7A;         /* Rich Orchid/Plum Accent */
+            --accent-hover: #783D67;   
+            --bg-linen: #FAF7F2;       /* Warm Linen Background */
+            --bg-lavender: #44293D;    /* Dark Creamish Plum */
+            --bg-card: #FFFFFF;        
+            --text-dark: #320F2F;      
+            --text-muted: #66525C;     
+            --text-light: #FFFFFF;     
+            --font-serif: 'Cormorant Garamond', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', Helvetica, Arial, sans-serif;
+            --transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+            --shadow-subtle: 0 10px 30px rgba(50, 15, 47, 0.05);
+            --shadow-hover: 0 20px 40px rgba(50, 15, 47, 0.12);
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--text-dark);
+            background-color: var(--bg-linen);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        h1, h2, h3, h4, .serif-font {
+            font-family: var(--font-serif);
+            font-weight: 600;
+            line-height: 1.25;
+        }
+
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        button { cursor: pointer; border: none; background: none; font-family: var(--font-sans); }
+
+        /* Keyframe Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 0 0 rgba(142, 75, 122, 0.3); }
+            70% { box-shadow: 0 0 0 12px rgba(142, 75, 122, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(142, 75, 122, 0); }
+        }
+
+        @keyframes floatIcon {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+
+        .animate-fade-1 { animation: fadeInUp 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+        .animate-fade-2 { animation: fadeInUp 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+        .animate-fade-3 { animation: fadeInUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+
+        /* Unified Header Navigation */
+        header {
+            background-color: rgba(250, 247, 242, 0.96);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(50, 15, 47, 0.06);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .brand-logo-img {
+            height: 44px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--text-dark);
+            padding: 4px 0;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent);
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--accent);
+            border-radius: 2px;
+        }
+
+        .btn-pill {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--text-light);
+            border-radius: 50px;
+            padding: 8px 18px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            box-shadow: 0 4px 12px rgba(142, 75, 122, 0.25);
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+        }
+
+        .btn-pill:hover, .btn-pill:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 22px rgba(142, 75, 122, 0.4);
+            background-color: var(--accent-hover);
+        }
+
+        /* Page Hero Header */
+        .page-header {
+            padding: 70px 0 45px 0;
+            text-align: center;
+        }
+
+        .about-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(142, 75, 122, 0.08);
+            border: 1px solid rgba(142, 75, 122, 0.2);
+            color: var(--accent);
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            animation: pulseGlow 3s infinite;
+        }
+
+        .page-title {
+            font-size: 46px;
+            color: var(--primary);
+            margin-bottom: 14px;
+            letter-spacing: -0.01em;
+        }
+
+        .page-lead {
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto;
+            font-size: 15.5px;
+            line-height: 1.7;
+        }
+
+        /* Mission & Vision 2-Column Grid */
+        .mission-vision-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin-bottom: 70px;
+        }
+
+        .mv-card {
+            background-color: var(--bg-card);
+            border-radius: 20px;
+            padding: 44px;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid rgba(50, 15, 47, 0.05);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .mv-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background-color: var(--accent);
+            transition: var(--transition);
+        }
+
+        .mv-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(142, 75, 122, 0.2);
+        }
+
+        .mv-card:hover::before {
+            width: 6px;
+            background-color: var(--primary);
+        }
+
+        .mv-icon-bubble {
+            width: 56px;
+            height: 56px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, rgba(142, 75, 122, 0.1), rgba(50, 15, 47, 0.05));
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            animation: floatIcon 4s ease-in-out infinite;
+        }
+
+        .mv-card-title {
+            font-size: 30px;
+            color: var(--primary);
+            margin-bottom: 14px;
+        }
+
+        .mv-card-text {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.75;
+            margin-bottom: 24px;
+        }
+
+        .mv-pillars-flex {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .mv-pillar-tag {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--primary);
+            background-color: var(--bg-linen);
+            padding: 6px 14px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* 8 Core Values 4x2 Grid */
+        .values-grid-8 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 70px;
+        }
+
+        .value-card {
+            background-color: var(--bg-card);
+            border-radius: 18px;
+            padding: 28px 20px;
+            text-align: center;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid rgba(50, 15, 47, 0.05);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(142, 75, 122, 0.18);
+        }
+
+        .value-icon-bubble {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(142, 75, 122, 0.1), rgba(50, 15, 47, 0.05));
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 14px;
+        }
+
+        .value-title {
+            font-size: 18px;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .value-desc {
+            font-size: 12.5px;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* Dark Plum Statement Banner */
+        .statement-banner {
+            background-color: #44293D;
+            background: linear-gradient(135deg, #320F2F 0%, #44293D 100%);
+            color: #FFFFFF;
+            border-radius: 20px;
+            padding: 55px 40px;
+            text-align: center;
+            margin-bottom: 80px;
+            box-shadow: 0 15px 35px rgba(50, 15, 47, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .statement-quote {
+            font-family: var(--font-serif);
+            font-size: 26px;
+            color: #FFFFFF !important;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto 24px auto;
+            line-height: 1.4;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            padding: 80px 0 40px 0;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 13px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(50, 15, 47, 0.6);
+            backdrop-filter: blur(5px);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-container {
+            background-color: var(--bg-linen);
+            border-radius: 16px;
+            width: 90%;
+            max-width: 520px;
+            padding: 40px;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 26px;
+            color: var(--primary);
+        }
+
+        .form-group { margin-bottom: 18px; }
+        .form-label { display: block; font-size: 11px; font-weight: 700; text-transform: uppercase; margin-bottom: 6px; color: var(--primary); }
+        .form-input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(50,15,47,0.15); font-family: var(--font-sans); }
+        .btn-submit { width: 100%; background-color: var(--primary); color: #fff; padding: 14px; border-radius: 30px; font-weight: 700; font-size: 12px; text-transform: uppercase; }
+
+        @media (max-width: 900px) {
+            .mission-vision-grid { grid-template-columns: 1fr; }
+            .values-grid-8 { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr; }
+            .page-title { font-size: 34px; }
+            .statement-quote { font-size: 20px; }
+        }
+
+        @media (max-width: 500px) {
+            .values-grid-8 { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Unified Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="All About Women's Health Homepage">
+                <img src="women-health-logo-transparent.png" alt="All About Women's Health Logo" class="brand-logo-img">
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="provider.html">Provider</a>
+                <a href="services.html">Services</a>
+                <a href="patients.html">Patients</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <button class="btn-pill" onclick="openBookingModal()">Book Appointment</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Header -->
+        <section class="page-header animate-fade-1">
+            <div class="about-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                Our Practice & Clinical Philosophy
+            </div>
+            <h1 class="page-title">About All About Women's Health LLC</h1>
+            <p class="page-lead">
+                Dedicated to exceptional, accessible, and culturally competent women's healthcare across every stage of life. Founded on principles of clinical excellence, respect, and patient advocacy.
+            </p>
+        </section>
+
+        <!-- Mission & Vision Cards Grid -->
+        <section class="mission-vision-grid animate-fade-2">
+            <!-- Mission Card -->
+            <div class="mv-card">
+                <div>
+                    <div class="mv-icon-bubble">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    </div>
+                    <h2 class="mv-card-title">Our Mission</h2>
+                    <p class="mv-card-text">
+                        "To provide exceptional, compassionate, and evidence-based healthcare that empowers women to achieve lifelong wellness through education, prevention, and personalized care."
+                    </p>
+                </div>
+                <div class="mv-pillars-flex">
+                    <span class="mv-pillar-tag">Compassion</span>
+                    <span class="mv-pillar-tag">Evidence-Based</span>
+                    <span class="mv-pillar-tag">Prevention</span>
+                </div>
+            </div>
+
+            <!-- Vision Card -->
+            <div class="mv-card" style="border-left-color: var(--primary);">
+                <div>
+                    <div class="mv-icon-bubble" style="color: var(--primary);">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8a4 4 0 1 0 4 4"/></svg>
+                    </div>
+                    <h2 class="mv-card-title">Our Vision</h2>
+                    <p class="mv-card-text">
+                        "To be a trusted leader in women's healthcare by delivering accessible, culturally competent, and comprehensive services that improve the health and well-being of every patient we serve."
+                    </p>
+                </div>
+                <div class="mv-pillars-flex">
+                    <span class="mv-pillar-tag">Leadership</span>
+                    <span class="mv-pillar-tag">Accessibility</span>
+                    <span class="mv-pillar-tag">Cultural Safety</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8 Core Practice Values Grid -->
+        <section class="animate-fade-3">
+            <div style="text-align: center; margin-bottom: 36px;">
+                <h2 style="font-size: 32px; color: var(--primary);">Our Core Practice Values</h2>
+                <p style="font-size: 14px; color: var(--text-muted);">The foundational clinical principles that guide our care every day:</p>
+            </div>
+
+            <div class="values-grid-8">
+                <!-- Value 1 -->
+                <div class="value-card">
+                    <div class="value-icon-bubble">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    </div>
+                    <h3 class="value-title">Compassion</h3>
+                    <p class="value-desc">Empathy, warmth, and supportive listening in every clinical consultation.</p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="value-card">
+                    <div class="value-icon-bubble">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <h3 class="value-title">Respect</h3>
+                    <p class="value-desc">Honoring patient dignity, privacy, cultural background, and individuality.</p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="value-card">
+                    <div class="value-icon-bubble">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 class="value-title">Integrity</h3>
+                    <p class="value-desc">Uncompromising ethical standards, honesty, and clinical transparency.</p>
+                </div>
+
+                <!-- Value 4 -->
+                <div class="value-card">
+                    <div class="value-icon-bubble">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+                    </div>
+                    <h3 class="value-title">Excellence</h3>
+                    <p class="value-desc">Continuous clinical distinction and research-backed healthcare standards.</p>
+                </div>
+
+                <!-- Value 5 -->
+                <div class="value-card">
+                    <div class="value-icon-bubble">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3 class="value-title">Patient Advocacy</h3>
+                    <p class="value-desc">Empowering women to make active, informed decisions about their care.</p>
+                </div>
+
+                <!-- Value 6 -->
+                <div class="value-card">
+                    <div class="value-icon-bubble">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                    </div>
+                    <h3 class="value-title">Education</h3>
+                    <p class="value-desc">Sharing health knowledge for proactive disease prevention and wellness.</p>
+                </div>
+
+                <!-- Value 7 -->
+                <div class="value-card">
+                    <div class="value-icon-bubble">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h3 class="value-title">Innovation</h3>
+                    <p class="value-desc">Modern diagnostic methodologies, bioidentical therapies, and advanced care.</p>
+                </div>
+
+                <!-- Value 8 -->
+                <div class="value-card">
+                    <div class="value-icon-bubble">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3 class="value-title">Cultural Safety</h3>
+                    <p class="value-desc">Welcoming, inclusive environment for all women and girls ages 13+.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dark Plum Statement Banner -->
+        <section class="statement-banner animate-fade-3">
+            <blockquote class="statement-quote">
+                "At All About Women's Health LLC, every patient is treated with dignity, respect, and individualized attention in a safe and supportive environment."
+            </blockquote>
+            <div style="margin-top: 24px;">
+                <a href="provider.html" class="btn-pill" style="padding: 12px 28px; font-size: 12px;">Meet Dr. Mispa Afueh, DNP &rarr;</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                    <img src="women-health-tree-icon.png" alt="Logo Icon" style="width: 44px;">
+                    <span style="font-weight: 700; color: #fff; font-size: 12px;">ALL ABOUT WOMENS HEALTH LLC</span>
+                </div>
+                <p>Caring for Women. Empowering Health. Inspiring Wellness.</p>
+                <p style="font-size: 12px; margin-top: 10px; color: rgba(255,255,255,0.5);">Address: 133 Main St. Suite 101, Bowie, MD 20715<br>Phone: (301) 555-4567 | Serving MD, DC & VA</p>
+            </div>
+
+            <div>
+                <h4 style="color: #fff; margin-bottom: 16px;">Office Hours</h4>
+                <p>Mon - Fri: 9:00 AM – 5:00 PM<br>Saturday: 10:00 AM – 2:00 PM<br>Sunday: Closed</p>
+            </div>
+
+            <div>
+                <h4 style="color: #fff; margin-bottom: 16px;">Quick Links</h4>
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <a href="index.html" style="color: rgba(255,255,255,0.7);">Home</a>
+                    <a href="provider.html" style="color: rgba(255,255,255,0.7);">Meet Dr. Mispa Afueh</a>
+                    <a href="services.html" style="color: rgba(255,255,255,0.7);">Clinical Services</a>
+                    <a href="contact.html" style="color: rgba(255,255,255,0.7);">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <div>&copy; 2026 All About Women's Health LLC. All rights reserved.</div>
+            <div>Built for WCAG 2.1 AA Accessibility & HIPAA Compliance.</div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeBookingModal()">&times;</button>
+            <h3 class="serif-font" style="font-size: 26px; color: var(--primary); text-align: center; margin-bottom: 6px;">Schedule Appointment</h3>
+            <p style="font-size: 13px; color: var(--text-muted); text-align: center; margin-bottom: 24px;">Complete the form below to secure your clinical consultation.</p>
+            <form id="appointmentForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label class="form-label" for="fullName">Full Name</label>
+                    <input type="text" id="fullName" class="form-input" required placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email Address</label>
+                    <input type="email" id="email" class="form-input" required placeholder="jane@example.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-input" required placeholder="(301) 555-0199">
+                </div>
+                <button type="submit" class="btn-submit">Request Appointment Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const bookingModal = document.getElementById("bookingModal");
+        function openBookingModal() { bookingModal.classList.add("active"); }
+        function closeBookingModal() { bookingModal.classList.remove("active"); }
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            alert("Thank you! Your appointment request has been submitted. Our office will contact you shortly.");
+            closeBookingModal();
+        }
+    </script>
+</body>
+</html>
