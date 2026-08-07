@@ -439,8 +439,18 @@
         }
 
         .service-card-item:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 14px 30px rgba(50, 15, 47, 0.08);
+            transform: translateY(-6px);
+            box-shadow: 0 14px 30px rgba(50, 15, 47, 0.1);
+        }
+
+        .service-card-item:hover .service-icon-bubble {
+            background-color: var(--accent);
+            color: #FFFFFF;
+            transform: scale(1.08);
+        }
+
+        .service-card-item:hover .service-learn-more {
+            border-bottom-color: var(--accent);
         }
 
         .service-icon-bubble {
@@ -453,6 +463,7 @@
             justify-content: center;
             margin-bottom: 16px;
             color: var(--accent);
+            transition: var(--transition);
         }
 
         .service-card-title {
@@ -755,12 +766,12 @@
 
                     <!-- Service Card 4 -->
                     <div class="service-card-item">
-                        <div class="service-icon-bubble" style="background-color: var(--accent); color: #fff;">
+                        <div class="service-icon-bubble">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
                         </div>
                         <h3 class="service-card-title">Pregnancy Care</h3>
                         <p class="service-card-text">Prenatal and postpartum support.</p>
-                        <a href="services.html" class="service-learn-more" style="border-bottom: 2px solid var(--accent);">LEARN MORE</a>
+                        <a href="services.html" class="service-learn-more">LEARN MORE</a>
                     </div>
 
                     <!-- Service Card 5 -->
