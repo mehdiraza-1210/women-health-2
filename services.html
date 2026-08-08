@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore comprehensive OB/GYN services at All About Women's Health LLC: Preventive Exams, Gynecologic Evaluations, Birth Control IUD/Nexplanon, Prenatal Care, Menopause BHRT, and Adolescent Care.">
+    <link rel="canonical" href="https://allaboutwomenshealth.com/services.html">
+    <title>Clinical Services | All About Women's Health LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        img { max-width: 100%; height: auto; display: block; }
+        
+        html { scroll-behavior: smooth; }
+
+        :root {
+            --primary: #320F2F;        /* Deep Burgundy/Plum */
+            --accent: #8E4B7A;         /* Rich Orchid/Plum Accent */
+            --accent-hover: #783D67;   
+            --bg-linen: #FAF7F2;       /* Warm Linen Background */
+            --bg-lavender: #44293D;    /* Dark Creamish Plum */
+            --bg-card: #FFFFFF;        
+            --text-dark: #320F2F;      
+            --text-muted: #66525C;     
+            --text-light: #FFFFFF;     
+            --font-serif: 'Cormorant Garamond', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', Helvetica, Arial, sans-serif;
+            --transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+            --shadow-subtle: 0 10px 30px rgba(50, 15, 47, 0.05);
+            --shadow-hover: 0 20px 40px rgba(50, 15, 47, 0.12);
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--text-dark);
+            background-color: var(--bg-linen);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        h1, h2, h3, h4, .serif-font {
+            font-family: var(--font-serif);
+            font-weight: 600;
+            line-height: 1.25;
+        }
+
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        button { cursor: pointer; border: none; background: none; font-family: var(--font-sans); }
+
+        /* Keyframe Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 0 0 rgba(142, 75, 122, 0.3); }
+            70% { box-shadow: 0 0 0 12px rgba(142, 75, 122, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(142, 75, 122, 0); }
+        }
+
+        .animate-fade-1 { animation: fadeInUp 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+        .animate-fade-2 { animation: fadeInUp 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+        .animate-fade-3 { animation: fadeInUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+
+        /* Unified Header Navigation */
+        header {
+            background-color: rgba(250, 247, 242, 0.96);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(50, 15, 47, 0.06);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .brand-logo-img {
+            height: 44px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--text-dark);
+            padding: 4px 0;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent);
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--accent);
+            border-radius: 2px;
+        }
+
+        .btn-pill {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--text-light);
+            border-radius: 50px;
+            padding: 8px 18px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            box-shadow: 0 4px 12px rgba(142, 75, 122, 0.25);
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+        }
+
+        .btn-pill:hover, .btn-pill:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 22px rgba(142, 75, 122, 0.4);
+            background-color: var(--accent-hover);
+        }
+
+        /* Hero Header */
+        .page-header {
+            padding: 70px 0 40px 0;
+            text-align: center;
+        }
+
+        .services-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(142, 75, 122, 0.08);
+            border: 1px solid rgba(142, 75, 122, 0.2);
+            color: var(--accent);
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            animation: pulseGlow 3s infinite;
+        }
+
+        .page-title {
+            font-size: 46px;
+            color: var(--primary);
+            margin-bottom: 14px;
+            letter-spacing: -0.01em;
+        }
+
+        .page-lead {
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto;
+            font-size: 15.5px;
+            line-height: 1.7;
+        }
+
+        /* Quick Navigation Bar */
+        .quick-nav-bar {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 55px;
+        }
+
+        .quick-nav-btn {
+            background-color: var(--bg-card);
+            border: 1px solid rgba(50, 15, 47, 0.08);
+            padding: 9px 18px;
+            border-radius: 30px;
+            font-size: 11.5px;
+            font-weight: 600;
+            color: var(--primary);
+            box-shadow: 0 4px 12px rgba(50, 15, 47, 0.03);
+            transition: var(--transition);
+        }
+
+        .quick-nav-btn:hover {
+            background-color: var(--primary);
+            color: #FFFFFF;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(50, 15, 47, 0.15);
+        }
+
+        /* Services Detailed Showcase Cards */
+        .services-detailed-list {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            margin-bottom: 80px;
+        }
+
+        .service-detail-card {
+            background-color: var(--bg-card);
+            border-radius: 22px;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid rgba(50, 15, 47, 0.05);
+            transition: var(--transition);
+            scroll-margin-top: 100px; /* Offset for 70px sticky header */
+        }
+
+        .service-detail-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(142, 75, 122, 0.18);
+        }
+
+        .service-img-wrapper {
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            min-height: 400px;
+        }
+
+        .service-detail-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .service-detail-card:hover .service-detail-img {
+            transform: scale(1.04);
+        }
+
+        .service-detail-body {
+            padding: 44px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .service-tag {
+            font-size: 11px;
+            font-weight: 800;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 10px;
+            display: inline-block;
+            background-color: rgba(142, 75, 122, 0.08);
+            padding: 5px 14px;
+            border-radius: 20px;
+            width: fit-content;
+        }
+
+        .service-h2 {
+            font-size: 30px;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+
+        .service-section-lbl {
+            font-size: 11.5px;
+            font-weight: 800;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-top: 16px;
+            display: block;
+        }
+
+        .service-desc-p {
+            font-size: 14.5px;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-top: 4px;
+        }
+
+        .service-bullet-list {
+            list-style: none;
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 13.5px;
+            color: var(--text-dark);
+        }
+
+        .service-bullet-list li {
+            position: relative;
+            padding-left: 22px;
+            font-weight: 500;
+        }
+
+        .service-bullet-list li::before {
+            content: '✓';
+            color: var(--accent);
+            font-weight: 800;
+            position: absolute;
+            left: 0;
+        }
+
+        .service-info-box {
+            background: var(--bg-linen);
+            border-radius: 12px;
+            padding: 18px 20px;
+            margin-top: 16px;
+            font-size: 13px;
+            color: var(--text-dark);
+            border-left: 4px solid var(--accent);
+            line-height: 1.6;
+        }
+
+        /* Dark Plum Action Banner */
+        .services-cta-banner {
+            background-color: #44293D;
+            background: linear-gradient(135deg, #320F2F 0%, #44293D 100%);
+            color: #FFFFFF;
+            border-radius: 20px;
+            padding: 55px 40px;
+            text-align: center;
+            margin-bottom: 80px;
+            box-shadow: 0 15px 35px rgba(50, 15, 47, 0.2);
+        }
+
+        .cta-banner-title {
+            font-size: 32px;
+            color: #FFFFFF !important;
+            margin-bottom: 12px;
+        }
+
+        .cta-banner-text {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.9) !important;
+            max-width: 620px;
+            margin: 0 auto 28px auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            padding: 80px 0 40px 0;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 13px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(50, 15, 47, 0.6);
+            backdrop-filter: blur(5px);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-container {
+            background-color: var(--bg-linen);
+            border-radius: 16px;
+            width: 90%;
+            max-width: 520px;
+            padding: 40px;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 26px;
+            color: var(--primary);
+        }
+
+        .form-group { margin-bottom: 18px; }
+        .form-label { display: block; font-size: 11px; font-weight: 700; text-transform: uppercase; margin-bottom: 6px; color: var(--primary); }
+        .form-input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(50,15,47,0.15); font-family: var(--font-sans); }
+        .btn-submit { width: 100%; background-color: var(--primary); color: #fff; padding: 14px; border-radius: 30px; font-weight: 700; font-size: 12px; text-transform: uppercase; }
+
+        @media (max-width: 900px) {
+            .service-detail-card, .footer-grid { grid-template-columns: 1fr; }
+            .page-title { font-size: 34px; }
+            .service-detail-body { padding: 28px; }
+            .service-img-wrapper { min-height: 280px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Unified Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="All About Women's Health Homepage">
+                <img src="women-health-logo-transparent.png" alt="All About Women's Health Logo" class="brand-logo-img">
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="provider.html">Provider</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="patients.html">Patients</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <button class="btn-pill" onclick="openBookingModal()">Book Appointment</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Header -->
+        <section class="page-header animate-fade-1">
+            <div class="services-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                Excellence in Women's Healthcare
+            </div>
+            <h1 class="page-title">Comprehensive Clinical Services</h1>
+            <p class="page-lead">
+                Evidence-based clinical evaluations, preventive screenings, specialized gynecological care, and hormonal therapies for women across Maryland, Washington DC, and Virginia.
+            </p>
+        </section>
+
+        <!-- Quick Jump Bar -->
+        <div class="quick-nav-bar animate-fade-2">
+            <a href="#preventive-care" class="quick-nav-btn">Preventive & Annual</a>
+            <a href="#gynecologic-care" class="quick-nav-btn">Gynecologic Care</a>
+            <a href="#family-planning" class="quick-nav-btn">Family Planning & LARC</a>
+            <a href="#pregnancy-care" class="quick-nav-btn">Obstetrics & Postpartum</a>
+            <a href="#hormonal-health" class="quick-nav-btn">Menopause & BHRT</a>
+            <a href="#adolescent-care" class="quick-nav-btn">Adolescent Care (13+)</a>
+        </div>
+
+        <!-- 6 Detailed Service Showcase Cards -->
+        <section class="services-detailed-list animate-fade-3">
+            
+            <!-- Service 1: Preventive Care -->
+            <article class="service-detail-card" id="preventive-care">
+                <div class="service-img-wrapper">
+                    <img src="service_1_preventive.jpg" alt="Preventive Care Exam with Dr. Mispa Afueh" class="service-detail-img">
+                </div>
+                <div class="service-detail-body">
+                    <span class="service-tag">Preventive & Wellness</span>
+                    <h2 class="service-h2">Preventive Care & Annual Exams</h2>
+                    
+                    <span class="service-section-lbl">Clinical Overview</span>
+                    <p class="service-desc-p">
+                        Preventive health care is the cornerstone of lifelong wellness. Our comprehensive well-woman evaluations assess health risk factors, deliver thorough screenings, and establish proactive health management plans tailored to your life stage.
+                    </p>
+
+                    <span class="service-section-lbl">Clinical Scope & Diagnostic Procedures</span>
+                    <ul class="service-bullet-list">
+                        <li>Annual Well-Woman Physical Examinations</li>
+                        <li>Pap Smears & Cervical Cancer Screening (HPV Co-testing)</li>
+                        <li>Clinical Breast Exams & Digital Mammogram Referrals</li>
+                        <li>Cardiovascular, Thyroid & Metabolic Risk Screening</li>
+                    </ul>
+
+                    <div class="service-info-box">
+                        <strong>Who May Benefit:</strong> All women ages 13 and older seeking routine annual evaluations and proactive disease prevention.
+                        <br><strong>Key Clinical Benefit:</strong> Early detection of gynecological abnormalities and long-term health risk reduction.
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <button class="btn-pill" onclick="openBookingModal()">Schedule Annual Exam</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Service 2: Gynecologic Care -->
+            <article class="service-detail-card" id="gynecologic-care">
+                <div class="service-img-wrapper">
+                    <img src="service_2_gynecology.jpg" alt="Gynecologic Evaluation with Dr. Mispa Afueh" class="service-detail-img">
+                </div>
+                <div class="service-detail-body">
+                    <span class="service-tag">Gynecology</span>
+                    <h2 class="service-h2">Gynecologic Care & Evaluations</h2>
+                    
+                    <span class="service-section-lbl">Clinical Overview</span>
+                    <p class="service-desc-p">
+                        Expert clinical evaluation and diagnostic management for acute and chronic gynecological concerns. We provide compassionate, evidence-based solutions in a gentle, non-judgmental environment.
+                    </p>
+
+                    <span class="service-section-lbl">Clinical Scope & Diagnostic Procedures</span>
+                    <ul class="service-bullet-list">
+                        <li>Gynecologic Evaluations & Chronic Pelvic Pain Assessment</li>
+                        <li>Vaginal Infection & Recurrent UTI Treatment</li>
+                        <li>Confidential STI Screening, Testing & Targeted Treatment</li>
+                        <li>PCOS (Polycystic Ovary Syndrome) Diagnosis & Management</li>
+                        <li>Endometriosis Evaluation & Multidisciplinary Referral</li>
+                    </ul>
+
+                    <div class="service-info-box">
+                        <strong>Who May Benefit:</strong> Women experiencing pelvic pain, irregular cycles, symptoms of infection, or hormonal disorders.
+                        <br><strong>Key Clinical Benefit:</strong> Rapid symptom relief, clear diagnostic answers, and individualized treatment protocols.
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <button class="btn-pill" onclick="openBookingModal()">Schedule Gynecologic Evaluation</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Service 3: Family Planning -->
+            <article class="service-detail-card" id="family-planning">
+                <div class="service-img-wrapper">
+                    <img src="service_3_family.jpg" alt="Family Planning Consultation with Dr. Mispa Afueh" class="service-detail-img">
+                </div>
+                <div class="service-detail-body">
+                    <span class="service-tag">Reproductive Health</span>
+                    <h2 class="service-h2">Family Planning & Contraception</h2>
+                    
+                    <span class="service-section-lbl">Clinical Overview</span>
+                    <p class="service-desc-p">
+                        Empowering women with modern contraceptive technologies and comprehensive family planning counseling. We guide you toward the method best suited for your body, health profile, and reproductive timeline.
+                    </p>
+
+                    <span class="service-section-lbl">Clinical Scope & Diagnostic Procedures</span>
+                    <ul class="service-bullet-list">
+                        <li>Contraceptive Counseling (Pills, Patches, Vaginal Rings)</li>
+                        <li>In-Office IUD Insertion & Removal (Mirena, Kyleena, Paragard)</li>
+                        <li>Nexplanon Subdermal Arm Implant Placement & Removal</li>
+                        <li>Preconception Counseling & Fertility Evaluation Referrals</li>
+                    </ul>
+
+                    <div class="service-info-box">
+                        <strong>Who May Benefit:</strong> Women seeking reliable long-acting reversible contraception (LARC) or preconception care.
+                        <br><strong>Key Clinical Benefit:</strong> Highly effective, personalized birth control tailored to your reproductive goals.
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <button class="btn-pill" onclick="openBookingModal()">Book Contraceptive Counseling</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Service 4: Pregnancy Care -->
+            <article class="service-detail-card" id="pregnancy-care">
+                <div class="service-img-wrapper">
+                    <img src="service_4_pregnancy.jpg" alt="Prenatal and Postpartum Care with Dr. Mispa Afueh" class="service-detail-img">
+                </div>
+                <div class="service-detail-body">
+                    <span class="service-tag">Obstetrics</span>
+                    <h2 class="service-h2">Pregnancy Care & Postpartum Support</h2>
+                    
+                    <span class="service-section-lbl">Clinical Overview</span>
+                    <p class="service-desc-p">
+                        Nurturing expectant mothers through every phase of pregnancy and early motherhood. Leveraging specialized Maternal-Newborn Nursing (RNC-MNN) expertise, we deliver supportive prenatal and postpartum care.
+                    </p>
+
+                    <span class="service-section-lbl">Clinical Scope & Diagnostic Procedures</span>
+                    <ul class="service-bullet-list">
+                        <li>Pregnancy Confirmation & Gestational Clinical Assessment</li>
+                        <li>Trimester Prenatal Milestone Care & Nutritional Counseling</li>
+                        <li>Postpartum Physical Recovery Care & Lactation Guidance</li>
+                        <li>Postpartum Mood Disorder & Emotional Health Screening</li>
+                    </ul>
+
+                    <div class="service-info-box">
+                        <strong>Who May Benefit:</strong> Expectant mothers seeking continuous maternal guidance and postpartum wellness.
+                        <br><strong>Key Clinical Benefit:</strong> Specialized maternal-newborn nursing expertise ensuring maternal and infant health.
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <button class="btn-pill" onclick="openBookingModal()">Schedule Prenatal Visit</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Service 5: Hormonal Health -->
+            <article class="service-detail-card" id="hormonal-health">
+                <div class="service-img-wrapper">
+                    <img src="service_5_hormonal.jpg" alt="Hormonal Health & Menopause Care with Dr. Mispa Afueh" class="service-detail-img">
+                </div>
+                <div class="service-detail-body">
+                    <span class="service-tag">Menopause & Hormones</span>
+                    <h2 class="service-h2">Hormonal Health & Menopause (BHRT)</h2>
+                    
+                    <span class="service-section-lbl">Clinical Overview</span>
+                    <p class="service-desc-p">
+                        Comprehensive evaluation and management of hormonal shifts, perimenopause transitions, and post-menopausal health. We restore vitality through customized bioidentical therapy and bone density protection.
+                    </p>
+
+                    <span class="service-section-lbl">Clinical Scope & Diagnostic Procedures</span>
+                    <ul class="service-bullet-list">
+                        <li>Perimenopause & Menopause Symptom Management</li>
+                        <li>Bioidentical Hormone Replacement Therapy (BHRT)</li>
+                        <li>Osteoporosis Risk Evaluation & DEXA Scan Guidance</li>
+                        <li>Hot Flash, Insomnia & Mood Shift Clinical Therapies</li>
+                    </ul>
+
+                    <div class="service-info-box">
+                        <strong>Who May Benefit:</strong> Women navigating hot flashes, sleep disturbances, fatigue, or menopause-related changes.
+                        <br><strong>Key Clinical Benefit:</strong> Rebalanced hormone levels, improved quality of life, and bone density preservation.
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <button class="btn-pill" onclick="openBookingModal()">Consult Hormonal Health</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Service 6: Adolescent Gynecology -->
+            <article class="service-detail-card" id="adolescent-care">
+                <div class="service-img-wrapper">
+                    <img src="service_6_adolescent.jpg" alt="Adolescent Gynecology Consultation with Dr. Mispa Afueh" class="service-detail-img">
+                </div>
+                <div class="service-detail-body">
+                    <span class="service-tag">Adolescent Health</span>
+                    <h2 class="service-h2">Adolescent Gynecology (Ages 13+)</h2>
+                    
+                    <span class="service-section-lbl">Clinical Overview</span>
+                    <p class="service-desc-p">
+                        Dedicated, age-appropriate gynecological care for young women ages 13 and older. We focus on education, building comfort, and establishing healthy habits in a gentle, reassuring atmosphere.
+                    </p>
+
+                    <span class="service-section-lbl">Clinical Scope & Diagnostic Procedures</span>
+                    <ul class="service-bullet-list">
+                        <li>First Gynecological Visits & Pubertal Health Education</li>
+                        <li>Irregular Period Evaluation & Menstrual Cramp Relief</li>
+                        <li>HPV Vaccination (Gardasil 9) Counseling</li>
+                        <li>Adolescent Reproductive Wellness & Hygiene Guidance</li>
+                    </ul>
+
+                    <div class="service-info-box">
+                        <strong>Who May Benefit:</strong> Young women ages 13 and up establishing initial reproductive health care.
+                        <br><strong>Key Clinical Benefit:</strong> Supportive, comfortable introduction to lifelong reproductive health and body confidence.
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <button class="btn-pill" onclick="openBookingModal()">Book Adolescent Visit</button>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Dark Plum Action Banner -->
+        <section class="services-cta-banner">
+            <h2 class="cta-banner-title">Personalized Care Tailored to Your Stage of Life</h2>
+            <p class="cta-banner-text">
+                Schedule a comprehensive consultation with Dr. Mispa Afueh, DNP today. We're here to empower your health and well-being.
+            </p>
+            <div>
+                <button class="btn-pill" onclick="openBookingModal()" style="padding: 12px 30px; font-size: 12px;">Book Your Clinical Consultation Now</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                    <img src="women-health-tree-icon.png" alt="Logo Icon" style="width: 44px;">
+                    <span style="font-weight: 700; color: #fff; font-size: 12px;">ALL ABOUT WOMENS HEALTH LLC</span>
+                </div>
+                <p>Caring for Women. Empowering Health. Inspiring Wellness.</p>
+                <p style="font-size: 12px; margin-top: 10px; color: rgba(255,255,255,0.5);">Address: 133 Main St. Suite 101, Bowie, MD 20715<br>Phone: (301) 555-4567 | Serving MD, DC & VA</p>
+            </div>
+
+            <div>
+                <h4 style="color: #fff; margin-bottom: 16px;">Office Hours</h4>
+                <p>Mon - Fri: 9:00 AM – 5:00 PM<br>Saturday: 10:00 AM – 2:00 PM<br>Sunday: Closed</p>
+            </div>
+
+            <div>
+                <h4 style="color: #fff; margin-bottom: 16px;">Quick Links</h4>
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <a href="index.html" style="color: rgba(255,255,255,0.7);">Home</a>
+                    <a href="about.html" style="color: rgba(255,255,255,0.7);">About Us</a>
+                    <a href="provider.html" style="color: rgba(255,255,255,0.7);">Meet Dr. Mispa Afueh</a>
+                    <a href="patients.html" style="color: rgba(255,255,255,0.7);">New Patients Info</a>
+                    <a href="contact.html" style="color: rgba(255,255,255,0.7);">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <div>&copy; 2026 All About Women's Health LLC. All rights reserved.</div>
+            <div>Built for WCAG 2.1 AA Accessibility & HIPAA Compliance.</div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeBookingModal()">&times;</button>
+            <h3 class="serif-font" style="font-size: 26px; color: var(--primary); text-align: center; margin-bottom: 6px;">Schedule Appointment</h3>
+            <p style="font-size: 13px; color: var(--text-muted); text-align: center; margin-bottom: 24px;">Complete the form below to secure your clinical consultation.</p>
+            <form id="appointmentForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label class="form-label" for="fullName">Full Name</label>
+                    <input type="text" id="fullName" class="form-input" required placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email Address</label>
+                    <input type="email" id="email" class="form-input" required placeholder="jane@example.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-input" required placeholder="(301) 555-0199">
+                </div>
+                <button type="submit" class="btn-submit">Request Appointment Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const bookingModal = document.getElementById("bookingModal");
+        function openBookingModal() { bookingModal.classList.add("active"); }
+        function closeBookingModal() { bookingModal.classList.remove("active"); }
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            alert("Thank you! Your appointment request has been submitted. Our office will contact you shortly.");
+            closeBookingModal();
+        }
+
+        // --- Front-End Inspection & Copy Protection ---
+        document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+        document.addEventListener('dragstart', function(e) { e.preventDefault(); });
+        document.addEventListener('keydown', function(e) {
+            if (
+                e.keyCode === 123 || 
+                (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) || 
+                (e.ctrlKey && (e.keyCode === 85 || e.keyCode === 83))
+            ) {
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        // Anti-DevTools Debugger Trap
+        setInterval(function() {
+            (function() { return false; })['constructor']('debugger')['call']();
+        }, 200);
+    </script>
+</body>
+</html>

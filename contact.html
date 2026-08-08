@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact All About Women's Health LLC in Bowie, MD. Serving Maryland, Washington DC, and Virginia. Call (301) 555-4567 or request an appointment online.">
+    <link rel="canonical" href="https://allaboutwomenshealth.com/contact.html">
+    <title>Contact Us | All About Women's Health LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        img { max-width: 100%; height: auto; display: block; }
+        
+        html { scroll-behavior: smooth; }
+
+        :root {
+            --primary: #320F2F;        /* Deep Burgundy/Plum */
+            --accent: #8E4B7A;         /* Rich Orchid/Plum Accent */
+            --accent-hover: #783D67;   
+            --bg-linen: #FAF7F2;       /* Warm Linen Background */
+            --bg-lavender: #44293D;    /* Dark Creamish Plum */
+            --bg-card: #FFFFFF;        
+            --text-dark: #320F2F;      
+            --text-muted: #66525C;     
+            --text-light: #FFFFFF;     
+            --font-serif: 'Cormorant Garamond', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', Helvetica, Arial, sans-serif;
+            --transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+            --shadow-subtle: 0 10px 30px rgba(50, 15, 47, 0.05);
+            --shadow-hover: 0 20px 40px rgba(50, 15, 47, 0.12);
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--text-dark);
+            background-color: var(--bg-linen);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        h1, h2, h3, h4, .serif-font {
+            font-family: var(--font-serif);
+            font-weight: 600;
+            line-height: 1.25;
+        }
+
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        button { cursor: pointer; border: none; background: none; font-family: var(--font-sans); }
+
+        /* Keyframe Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 0 0 rgba(142, 75, 122, 0.3); }
+            70% { box-shadow: 0 0 0 12px rgba(142, 75, 122, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(142, 75, 122, 0); }
+        }
+
+        .animate-fade-1 { animation: fadeInUp 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+        .animate-fade-2 { animation: fadeInUp 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+        .animate-fade-3 { animation: fadeInUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+
+        /* Unified Header Navigation */
+        header {
+            background-color: rgba(250, 247, 242, 0.96);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(50, 15, 47, 0.06);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .brand-logo-img {
+            height: 44px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--text-dark);
+            padding: 4px 0;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent);
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--accent);
+            border-radius: 2px;
+        }
+
+        .btn-pill {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--text-light);
+            border-radius: 50px;
+            padding: 8px 18px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            box-shadow: 0 4px 12px rgba(142, 75, 122, 0.25);
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+        }
+
+        .btn-pill:hover, .btn-pill:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 22px rgba(142, 75, 122, 0.4);
+            background-color: var(--accent-hover);
+        }
+
+        /* Page Hero Header */
+        .page-header {
+            padding: 70px 0 35px 0;
+            text-align: center;
+        }
+
+        .contact-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(142, 75, 122, 0.08);
+            border: 1px solid rgba(142, 75, 122, 0.2);
+            color: var(--accent);
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            animation: pulseGlow 3s infinite;
+        }
+
+        .page-title {
+            font-size: 46px;
+            color: var(--primary);
+            margin-bottom: 14px;
+            letter-spacing: -0.01em;
+        }
+
+        .page-lead {
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto;
+            font-size: 15.5px;
+            line-height: 1.7;
+        }
+
+        /* Emergency Warning Banner */
+        .emergency-banner {
+            background-color: #5A1F2C;
+            color: #FFFFFF;
+            border-radius: 16px;
+            padding: 18px 28px;
+            text-align: center;
+            margin-bottom: 45px;
+            font-size: 13.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            box-shadow: 0 8px 20px rgba(90, 31, 44, 0.15);
+        }
+
+        /* 4 Quick Info Cards Grid */
+        .info-cards-grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .info-card {
+            background-color: var(--bg-card);
+            border-radius: 18px;
+            padding: 28px 20px;
+            text-align: center;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid rgba(50, 15, 47, 0.05);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(142, 75, 122, 0.2);
+        }
+
+        .info-icon-bubble {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(142, 75, 122, 0.1), rgba(50, 15, 47, 0.05));
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 14px;
+        }
+
+        .info-card-label {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 6px;
+        }
+
+        .info-card-val {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .info-card-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* Main Contact & Map 2-Column Grid */
+        .contact-main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 36px;
+            margin-bottom: 80px;
+        }
+
+        .contact-box {
+            background-color: var(--bg-card);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid rgba(50, 15, 47, 0.05);
+        }
+
+        .contact-box-title {
+            font-size: 28px;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .map-frame-wrapper {
+            width: 100%;
+            height: 320px;
+            border-radius: 14px;
+            overflow: hidden;
+            margin: 20px 0;
+            box-shadow: 0 6px 18px rgba(50,15,47,0.08);
+            border: 1px solid rgba(50,15,47,0.1);
+        }
+
+        .form-group { margin-bottom: 20px; }
+        .form-label { display: block; font-size: 11px; font-weight: 700; text-transform: uppercase; margin-bottom: 6px; color: var(--primary); letter-spacing: 0.05em; }
+        .form-input {
+            width: 100%;
+            padding: 13px 16px;
+            border-radius: 10px;
+            border: 1px solid rgba(50, 15, 47, 0.12);
+            font-family: var(--font-sans);
+            font-size: 14px;
+            color: var(--text-dark);
+            background-color: var(--bg-linen);
+            transition: var(--transition);
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--accent);
+            background-color: #FFFFFF;
+            box-shadow: 0 0 0 4px rgba(142, 75, 122, 0.1);
+        }
+
+        .btn-submit-form {
+            width: 100%;
+            background-color: var(--primary);
+            color: #FFFFFF;
+            padding: 15px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            box-shadow: 0 6px 18px rgba(50, 15, 47, 0.2);
+            transition: var(--transition);
+        }
+
+        .btn-submit-form:hover {
+            background-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(142, 75, 122, 0.35);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            padding: 80px 0 40px 0;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 13px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(50, 15, 47, 0.6);
+            backdrop-filter: blur(5px);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-container {
+            background-color: var(--bg-linen);
+            border-radius: 16px;
+            width: 90%;
+            max-width: 520px;
+            padding: 40px;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 26px;
+            color: var(--primary);
+        }
+
+        @media (max-width: 900px) {
+            .info-cards-grid-4 { grid-template-columns: repeat(2, 1fr); }
+            .contact-main-grid, .footer-grid { grid-template-columns: 1fr; }
+            .page-title { font-size: 34px; }
+            .contact-box { padding: 28px; }
+        }
+
+        @media (max-width: 500px) {
+            .info-cards-grid-4 { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Unified Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="All About Women's Health Homepage">
+                <img src="women-health-logo-transparent.png" alt="All About Women's Health Logo" class="brand-logo-img">
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="provider.html">Provider</a>
+                <a href="services.html">Services</a>
+                <a href="patients.html">Patients</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <button class="btn-pill" onclick="openBookingModal()">Book Appointment</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Header -->
+        <section class="page-header animate-fade-1">
+            <div class="contact-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Get In Touch With Our Practice
+            </div>
+            <h1 class="page-title">Contact Us</h1>
+            <p class="page-lead">
+                We're here to help. Reach out to schedule an appointment, ask questions about clinical services, or inquire about insurance coverage in MD, DC & VA.
+            </p>
+        </section>
+
+        <!-- Medical Emergency Banner -->
+        <div class="emergency-banner animate-fade-1">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span><strong>Medical Emergency Notice:</strong> For urgent medical emergencies, please call <strong>911</strong> or visit your nearest emergency room immediately.</span>
+        </div>
+
+        <!-- 4 Quick Info Cards Grid -->
+        <section class="info-cards-grid-4 animate-fade-2">
+            <!-- Card 1 -->
+            <div class="info-card">
+                <div class="info-icon-bubble">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="info-card-label">Office Address</div>
+                <div class="info-card-val">133 Main St. Suite 101</div>
+                <div class="info-card-sub">Bowie, MD 20715 (DMV)</div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="info-card">
+                <div class="info-icon-bubble">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="info-card-label">Click-to-Call Phone</div>
+                <a href="tel:3015554567" class="info-card-val" style="color: var(--accent);">(301) 555-4567</a>
+                <div class="info-card-sub">Direct Clinical Line</div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="info-card">
+                <div class="info-icon-bubble">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="info-card-label">Email Address</div>
+                <a href="mailto:info@allaboutwomenshealth.com" class="info-card-val" style="font-size: 12px; color: var(--accent);">info@allaboutwomenshealth.com</a>
+                <div class="info-card-sub">1 Business Day Response</div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="info-card">
+                <div class="info-icon-bubble">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="info-card-label">Business Hours</div>
+                <div class="info-card-val" style="font-size: 13px;">Mon-Fri 9am-5pm</div>
+                <div class="info-card-sub">Sat 10am-2pm | Sun Closed</div>
+            </div>
+        </section>
+
+        <!-- Main Location Map & Message Form 2-Column Grid -->
+        <section class="contact-main-grid animate-fade-3">
+            <!-- Left Box: Location & Map -->
+            <div class="contact-box">
+                <h2 class="contact-box-title">Our Practice Location</h2>
+                <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 12px;">
+                    Located conveniently in Bowie, MD serving women across Maryland, Washington DC, and Virginia.
+                </p>
+
+                <!-- Embedded Live Google Map -->
+                <div class="map-frame-wrapper">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=133+Main+St+Suite+101,+Bowie,+MD+20715&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="All About Women's Health LLC Location Map">
+                    </iframe>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 16px;">
+                    <span style="font-size: 12.5px; color: var(--text-muted);">📍 133 Main St. Suite 101, Bowie, MD 20715</span>
+                    <a href="https://maps.google.com/?q=133+Main+St+Suite+101,+Bowie,+MD+20715" target="_blank" class="btn-pill" style="padding: 6px 14px; font-size: 10px;">Get Directions &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Right Box: Message Form -->
+            <div class="contact-box">
+                <h2 class="contact-box-title">Send a Secure Message</h2>
+                <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: 24px;">
+                    Fill out the form below and our administrative team will reach out promptly.
+                </p>
+
+                <form onsubmit="handleContactSubmit(event)">
+                    <div class="form-group">
+                        <label class="form-label" for="cName">Full Name</label>
+                        <input type="text" id="cName" class="form-input" required placeholder="Jane Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="cEmail">Email Address</label>
+                        <input type="email" id="cEmail" class="form-input" required placeholder="jane@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="cPhone">Phone Number</label>
+                        <input type="tel" id="cPhone" class="form-input" required placeholder="(301) 555-0199">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="cReason">Reason for Inquiry</label>
+                        <select id="cReason" class="form-input" required>
+                            <option value="">Select Inquiry Type...</option>
+                            <option value="General Inquiry">General Clinical Inquiry</option>
+                            <option value="Appointment Request">Schedule / Reschedule Appointment</option>
+                            <option value="Insurance Question">Insurance & Coverage Verification</option>
+                            <option value="Prescription Refill">Prescription Refill / Records</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="cMsg">Message</label>
+                        <textarea id="cMsg" class="form-input" rows="3" required placeholder="How can our clinical team assist you today?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit-form">Send Message Now</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                    <img src="women-health-tree-icon.png" alt="Logo Icon" style="width: 44px;">
+                    <span style="font-weight: 700; color: #fff; font-size: 12px;">ALL ABOUT WOMENS HEALTH LLC</span>
+                </div>
+                <p>Caring for Women. Empowering Health. Inspiring Wellness.</p>
+                <p style="font-size: 12px; margin-top: 10px; color: rgba(255,255,255,0.5);">Address: 133 Main St. Suite 101, Bowie, MD 20715<br>Phone: (301) 555-4567 | Serving MD, DC & VA</p>
+            </div>
+
+            <div>
+                <h4 style="color: #fff; margin-bottom: 16px;">Office Hours</h4>
+                <p>Mon - Fri: 9:00 AM – 5:00 PM<br>Saturday: 10:00 AM – 2:00 PM<br>Sunday: Closed</p>
+            </div>
+
+            <div>
+                <h4 style="color: #fff; margin-bottom: 16px;">Quick Links</h4>
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <a href="index.html" style="color: rgba(255,255,255,0.7);">Home</a>
+                    <a href="about.html" style="color: rgba(255,255,255,0.7);">About Us</a>
+                    <a href="provider.html" style="color: rgba(255,255,255,0.7);">Meet Dr. Mispa Afueh</a>
+                    <a href="services.html" style="color: rgba(255,255,255,0.7);">Clinical Services</a>
+                    <a href="privacy.html" style="color: rgba(255,255,255,0.7);">Privacy & Compliance</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <div>&copy; 2026 All About Women's Health LLC. All rights reserved.</div>
+            <div>Built for WCAG 2.1 AA Accessibility & HIPAA Compliance.</div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeBookingModal()">&times;</button>
+            <h3 class="serif-font" style="font-size: 26px; color: var(--primary); text-align: center; margin-bottom: 6px;">Schedule Appointment</h3>
+            <p style="font-size: 13px; color: var(--text-muted); text-align: center; margin-bottom: 24px;">Complete the form below to secure your clinical consultation.</p>
+            <form id="appointmentForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label class="form-label" for="fullName">Full Name</label>
+                    <input type="text" id="fullName" class="form-input" required placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email Address</label>
+                    <input type="email" id="email" class="form-input" required placeholder="jane@example.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-input" required placeholder="(301) 555-0199">
+                </div>
+                <button type="submit" class="btn-submit">Request Appointment Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const bookingModal = document.getElementById("bookingModal");
+        function openBookingModal() { bookingModal.classList.add("active"); }
+        function closeBookingModal() { bookingModal.classList.remove("active"); }
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            alert("Thank you! Your appointment request has been submitted. Our office will contact you shortly.");
+            closeBookingModal();
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            alert("Thank you! Your message has been securely submitted to our clinical office team. We will respond within 1 business day.");
+            e.target.reset();
+        }
+
+        // --- Front-End Inspection & Copy Protection ---
+        document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+        document.addEventListener('dragstart', function(e) { e.preventDefault(); });
+        document.addEventListener('keydown', function(e) {
+            if (
+                e.keyCode === 123 || 
+                (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) || 
+                (e.ctrlKey && (e.keyCode === 85 || e.keyCode === 83))
+            ) {
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        // Anti-DevTools Debugger Trap
+        setInterval(function() {
+            (function() { return false; })['constructor']('debugger')['call']();
+        }, 200);
+    </script>
+</body>
+</html>

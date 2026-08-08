@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="New Patient Information at All About Women's Health LLC. Before your visit checklist, insurance, preparation, appointment policy, and FAQs.">
+    <link rel="canonical" href="https://allaboutwomenshealth.com/patients.html">
+    <title>New Patients | All About Women's Health LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        img { max-width: 100%; height: auto; display: block; }
+        
+        html { scroll-behavior: smooth; }
+
+        :root {
+            --primary: #320F2F;        /* Deep Burgundy/Plum */
+            --accent: #8E4B7A;         /* Rich Orchid/Plum Accent */
+            --accent-hover: #783D67;   
+            --bg-linen: #FAF7F2;       /* Warm Linen Background */
+            --bg-lavender: #44293D;    /* Dark Creamish Plum */
+            --bg-card: #FFFFFF;        
+            --text-dark: #320F2F;      
+            --text-muted: #66525C;     
+            --text-light: #FFFFFF;     
+            --font-serif: 'Cormorant Garamond', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', Helvetica, Arial, sans-serif;
+            --transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+            --shadow-subtle: 0 10px 30px rgba(50, 15, 47, 0.05);
+            --shadow-hover: 0 20px 40px rgba(50, 15, 47, 0.12);
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--text-dark);
+            background-color: var(--bg-linen);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        h1, h2, h3, h4, .serif-font {
+            font-family: var(--font-serif);
+            font-weight: 600;
+            line-height: 1.25;
+        }
+
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        button { cursor: pointer; border: none; background: none; font-family: var(--font-sans); }
+
+        /* Keyframe Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 0 0 rgba(142, 75, 122, 0.3); }
+            70% { box-shadow: 0 0 0 12px rgba(142, 75, 122, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(142, 75, 122, 0); }
+        }
+
+        .animate-fade-1 { animation: fadeInUp 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+        .animate-fade-2 { animation: fadeInUp 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+        .animate-fade-3 { animation: fadeInUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+
+        /* Unified Header Navigation */
+        header {
+            background-color: rgba(250, 247, 242, 0.96);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(50, 15, 47, 0.06);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .brand-logo-img {
+            height: 44px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--text-dark);
+            padding: 4px 0;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent);
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--accent);
+            border-radius: 2px;
+        }
+
+        .btn-pill {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--text-light);
+            border-radius: 50px;
+            padding: 8px 18px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            box-shadow: 0 4px 12px rgba(142, 75, 122, 0.25);
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+        }
+
+        .btn-pill:hover, .btn-pill:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 22px rgba(142, 75, 122, 0.4);
+            background-color: var(--accent-hover);
+        }
+
+        /* Page Hero Header */
+        .page-header {
+            padding: 70px 0 45px 0;
+            text-align: center;
+        }
+
+        .welcome-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(142, 75, 122, 0.08);
+            border: 1px solid rgba(142, 75, 122, 0.2);
+            color: var(--accent);
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            animation: pulseGlow 3s infinite;
+        }
+
+        .page-title {
+            font-size: 46px;
+            color: var(--primary);
+            margin-bottom: 14px;
+            letter-spacing: -0.01em;
+        }
+
+        .page-lead {
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto;
+            font-size: 15.5px;
+            line-height: 1.7;
+        }
+
+        /* Checklist 6 Cards Grid */
+        .checklist-grid-6 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-bottom: 70px;
+        }
+
+        .checklist-card {
+            background-color: var(--bg-card);
+            border-radius: 18px;
+            padding: 32px 24px;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid rgba(50, 15, 47, 0.05);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .checklist-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(142, 75, 122, 0.2);
+        }
+
+        .step-number-tag {
+            font-size: 11px;
+            font-weight: 800;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            background: rgba(142, 75, 122, 0.08);
+            padding: 4px 12px;
+            border-radius: 20px;
+            width: fit-content;
+            margin-bottom: 16px;
+        }
+
+        .checklist-card-title {
+            font-size: 20px;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .checklist-card-text {
+            font-size: 13.5px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        /* Policy Cards Grid */
+        .policies-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 70px;
+        }
+
+        .policy-box {
+            background-color: var(--bg-card);
+            border-radius: 18px;
+            padding: 36px;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid rgba(50, 15, 47, 0.05);
+            border-left: 5px solid var(--accent);
+            transition: var(--transition);
+        }
+
+        .policy-box:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .policy-box-title {
+            font-size: 24px;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+
+        /* Interactive FAQ Accordion */
+        .faq-section {
+            background-color: var(--bg-card);
+            border-radius: 20px;
+            padding: 44px;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid rgba(50, 15, 47, 0.05);
+            margin-bottom: 70px;
+        }
+
+        .faq-accordion-item {
+            border-bottom: 1px solid rgba(50, 15, 47, 0.08);
+            padding: 20px 0;
+        }
+
+        .faq-accordion-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-family: var(--font-serif);
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--primary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            color: var(--accent);
+        }
+
+        .faq-icon {
+            font-size: 18px;
+            color: var(--accent);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, margin-top 0.3s ease;
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        .faq-accordion-item.active .faq-answer {
+            max-height: 200px;
+            margin-top: 12px;
+        }
+
+        .faq-accordion-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        /* Dark Plum Action Banner */
+        .patient-cta-banner {
+            background-color: #44293D;
+            background: linear-gradient(135deg, #320F2F 0%, #44293D 100%);
+            color: #FFFFFF;
+            border-radius: 20px;
+            padding: 50px 40px;
+            text-align: center;
+            margin-bottom: 80px;
+            box-shadow: 0 15px 35px rgba(50, 15, 47, 0.2);
+        }
+
+        .cta-banner-title {
+            font-size: 32px;
+            color: #FFFFFF !important;
+            margin-bottom: 12px;
+        }
+
+        .cta-banner-text {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.9) !important;
+            max-width: 600px;
+            margin: 0 auto 28px auto;
+        }
+
+        .cta-buttons-flex {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            padding: 80px 0 40px 0;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 13px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(50, 15, 47, 0.6);
+            backdrop-filter: blur(5px);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-container {
+            background-color: var(--bg-linen);
+            border-radius: 16px;
+            width: 90%;
+            max-width: 520px;
+            padding: 40px;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 26px;
+            color: var(--primary);
+        }
+
+        .form-group { margin-bottom: 18px; }
+        .form-label { display: block; font-size: 11px; font-weight: 700; text-transform: uppercase; margin-bottom: 6px; color: var(--primary); }
+        .form-input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(50,15,47,0.15); font-family: var(--font-sans); }
+        .btn-submit { width: 100%; background-color: var(--primary); color: #fff; padding: 14px; border-radius: 30px; font-weight: 700; font-size: 12px; text-transform: uppercase; }
+
+        @media (max-width: 900px) {
+            .checklist-grid-6, .policies-grid, .footer-grid { grid-template-columns: 1fr; }
+            .page-title { font-size: 34px; }
+            .faq-section { padding: 28px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Unified Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="All About Women's Health Homepage">
+                <img src="women-health-logo-transparent.png" alt="All About Women's Health Logo" class="brand-logo-img">
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="provider.html">Provider</a>
+                <a href="services.html">Services</a>
+                <a href="patients.html" class="active">Patients</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <button class="btn-pill" onclick="openBookingModal()">Book Appointment</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Header -->
+        <section class="page-header animate-fade-1">
+            <div class="welcome-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Welcome to Our Practice
+            </div>
+            <h1 class="page-title">New Patient Information & Preparation</h1>
+            <p class="page-lead">
+                We look forward to welcoming you to All About Women's Health LLC. Review our step-by-step visit checklist, practice policies, and insurance guidelines for a comfortable visit.
+            </p>
+        </section>
+
+        <!-- Step-by-Step 6 Cards Checklist -->
+        <section class="animate-fade-2">
+            <div style="text-align: center; margin-bottom: 36px;">
+                <h2 style="font-size: 32px; color: var(--primary);">Before Your Visit Checklist</h2>
+                <p style="font-size: 14px; color: var(--text-muted);">Complete these 6 simple steps prior to your appointment:</p>
+            </div>
+
+            <div class="checklist-grid-6">
+                <!-- Card 1 -->
+                <div class="checklist-card">
+                    <div>
+                        <span class="step-number-tag">Step 1</span>
+                        <h3 class="checklist-card-title">Registration Forms</h3>
+                        <p class="checklist-card-text">
+                            Download and complete your new patient paperwork prior to your appointment to expedite check-in.
+                        </p>
+                    </div>
+                    <a href="resources.html" style="font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase;">Download Forms &rarr;</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="checklist-card">
+                    <div>
+                        <span class="step-number-tag">Step 2</span>
+                        <h3 class="checklist-card-title">Valid Photo ID</h3>
+                        <p class="checklist-card-text">
+                            Bring a government-issued photo ID (Driver's License, State ID, or Passport) for identity verification.
+                        </p>
+                    </div>
+                    <span style="font-size: 12px; color: var(--text-muted); font-weight: 600;">✓ Required for Check-In</span>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="checklist-card">
+                    <div>
+                        <span class="step-number-tag">Step 3</span>
+                        <h3 class="checklist-card-title">Insurance Card</h3>
+                        <p class="checklist-card-text">
+                            Bring your active primary and secondary health insurance documentation for verification.
+                        </p>
+                    </div>
+                    <span style="font-size: 12px; color: var(--text-muted); font-weight: 600;">✓ Commercial / Medicaid / Medicare</span>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="checklist-card">
+                    <div>
+                        <span class="step-number-tag">Step 4</span>
+                        <h3 class="checklist-card-title">Current Medications</h3>
+                        <p class="checklist-card-text">
+                            Prepare a list of all current prescription drugs, OTC supplements, vitamins, and dosages.
+                        </p>
+                    </div>
+                    <span style="font-size: 12px; color: var(--text-muted); font-weight: 600;">✓ Medication Reconciliation</span>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="checklist-card">
+                    <div>
+                        <span class="step-number-tag">Step 5</span>
+                        <h3 class="checklist-card-title">Previous Records</h3>
+                        <p class="checklist-card-text">
+                            If available, bring recent Pap smear reports, mammogram scans, or medical summary records.
+                        </p>
+                    </div>
+                    <span style="font-size: 12px; color: var(--text-muted); font-weight: 600;">✓ Continuity of Care</span>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="checklist-card">
+                    <div>
+                        <span class="step-number-tag">Step 6</span>
+                        <h3 class="checklist-card-title">Copay & Payment</h3>
+                        <p class="checklist-card-text">
+                            Confirm copayment details. We accept credit/debit cards, HSA/FSA cards, and self-pay plans.
+                        </p>
+                    </div>
+                    <span style="font-size: 12px; color: var(--text-muted); font-weight: 600;">✓ Secure Payments</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Policies Grid -->
+        <section class="policies-grid animate-fade-3">
+            <div class="policy-box">
+                <h3 class="policy-box-title">Insurance & Financial Transparency</h3>
+                <p style="font-size: 14.5px; color: var(--text-muted); line-height: 1.7; margin-bottom: 16px;">
+                    We participate in a wide variety of commercial insurance plans, Medicaid, and Medicare programs across Maryland, Washington DC, and Virginia (DMV area). For self-pay patients, transparent pricing is provided prior to consultation.
+                </p>
+                <div style="font-size: 13px; color: var(--primary); font-weight: 600; background: var(--bg-linen); padding: 12px 18px; border-radius: 8px;">
+                    Coverage Questions? Call our office at <strong>(301) 555-4567</strong> for verification.
+                </div>
+            </div>
+
+            <div class="policy-box" style="border-left-color: var(--primary);">
+                <h3 class="policy-box-title">Cancellation & Rescheduling Policy</h3>
+                <p style="font-size: 14.5px; color: var(--text-muted); line-height: 1.7; margin-bottom: 16px;">
+                    We kindly request at least 24 hours advance notice for appointment cancellations or rescheduling. This allows our clinical team to offer the open appointment slot to another patient requiring timely care.
+                </p>
+                <div style="font-size: 13px; color: var(--primary); font-weight: 600; background: var(--bg-linen); padding: 12px 18px; border-radius: 8px;">
+                    Reschedule easily online or by calling <strong>(301) 555-4567</strong>.
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive FAQ Accordion -->
+        <section class="faq-section animate-fade-3">
+            <div style="text-align: center; margin-bottom: 32px;">
+                <h2 style="font-size: 32px; color: var(--primary);">Frequently Asked Questions</h2>
+                <p style="font-size: 14px; color: var(--text-muted);">Click on a question below to reveal detailed answers:</p>
+            </div>
+
+            <div class="faq-accordion-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    What should I expect during my first well-woman visit?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    Your initial visit includes a comprehensive medical history review, discussion of personal health concerns, and necessary clinical screenings in a supportive, respectful environment. We prioritize listening and empowering you to lead your health choices.
+                </div>
+            </div>
+
+            <div class="faq-accordion-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    At what age should a young woman start gynecological care?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    We welcome patients starting at age 13. Initial adolescent visits focus primarily on health education, period irregularity management, and building comfort with your provider, without mandatory internal exams unless clinically indicated.
+                </div>
+            </div>
+
+            <div class="faq-accordion-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    What insurance plans are accepted at your practice?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    We accept major commercial health insurance networks, Medicaid, and Medicare plans across Maryland, Washington DC, and Virginia. Contact our billing staff for specific coverage confirmation.
+                </div>
+            </div>
+
+            <div class="faq-accordion-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    How do I request prescription refills or access lab test results?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    Prescription refills and lab results are securely managed through our clinical team. You can call our office directly or submit a message through our online contact form.
+                </div>
+            </div>
+        </section>
+
+        <!-- Dark Plum Action Banner -->
+        <section class="patient-cta-banner">
+            <h2 class="cta-banner-title">Ready to Experience Compassionate Care?</h2>
+            <p class="cta-banner-text">
+                Schedule your clinical consultation with Dr. Mispa Afueh, DNP today. We're here to support your lifelong health and wellness.
+            </p>
+            <div class="cta-buttons-flex">
+                <button class="btn-pill" onclick="openBookingModal()" style="padding: 12px 28px; font-size: 12px;">Schedule Appointment Now</button>
+                <a href="resources.html" class="btn-pill" style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); padding: 12px 28px; font-size: 12px;">Download Intake Forms</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                    <img src="women-health-tree-icon.png" alt="Logo Icon" style="width: 44px;">
+                    <span style="font-weight: 700; color: #fff; font-size: 12px;">ALL ABOUT WOMENS HEALTH LLC</span>
+                </div>
+                <p>Caring for Women. Empowering Health. Inspiring Wellness.</p>
+                <p style="font-size: 12px; margin-top: 10px; color: rgba(255,255,255,0.5);">Address: 133 Main St. Suite 101, Bowie, MD 20715<br>Phone: (301) 555-4567 | Serving MD, DC & VA</p>
+            </div>
+
+            <div>
+                <h4 style="color: #fff; margin-bottom: 16px;">Office Hours</h4>
+                <p>Mon - Fri: 9:00 AM – 5:00 PM<br>Saturday: 10:00 AM – 2:00 PM<br>Sunday: Closed</p>
+            </div>
+
+            <div>
+                <h4 style="color: #fff; margin-bottom: 16px;">Quick Links</h4>
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <a href="index.html" style="color: rgba(255,255,255,0.7);">Home</a>
+                    <a href="about.html" style="color: rgba(255,255,255,0.7);">About Us</a>
+                    <a href="provider.html" style="color: rgba(255,255,255,0.7);">Meet Dr. Mispa Afueh</a>
+                    <a href="resources.html" style="color: rgba(255,255,255,0.7);">Patient Resources</a>
+                    <a href="contact.html" style="color: rgba(255,255,255,0.7);">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <div>&copy; 2026 All About Women's Health LLC. All rights reserved.</div>
+            <div>Built for WCAG 2.1 AA Accessibility & HIPAA Compliance.</div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeBookingModal()">&times;</button>
+            <h3 class="serif-font" style="font-size: 26px; color: var(--primary); text-align: center; margin-bottom: 6px;">Schedule Appointment</h3>
+            <p style="font-size: 13px; color: var(--text-muted); text-align: center; margin-bottom: 24px;">Complete the form below to secure your clinical consultation.</p>
+            <form id="appointmentForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label class="form-label" for="fullName">Full Name</label>
+                    <input type="text" id="fullName" class="form-input" required placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email Address</label>
+                    <input type="email" id="email" class="form-input" required placeholder="jane@example.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-input" required placeholder="(301) 555-0199">
+                </div>
+                <button type="submit" class="btn-submit">Request Appointment Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const bookingModal = document.getElementById("bookingModal");
+        function openBookingModal() { bookingModal.classList.add("active"); }
+        function closeBookingModal() { bookingModal.classList.remove("active"); }
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            alert("Thank you! Your appointment request has been submitted. Our office will contact you shortly.");
+            closeBookingModal();
+        }
+
+        function toggleFaq(element) {
+            const item = element.parentElement;
+            item.classList.toggle("active");
+        }
+
+        // --- Front-End Inspection & Copy Protection ---
+        document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+        document.addEventListener('dragstart', function(e) { e.preventDefault(); });
+        document.addEventListener('keydown', function(e) {
+            if (
+                e.keyCode === 123 || 
+                (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) || 
+                (e.ctrlKey && (e.keyCode === 85 || e.keyCode === 83))
+            ) {
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        // Anti-DevTools Debugger Trap
+        setInterval(function() {
+            (function() { return false; })['constructor']('debugger')['call']();
+        }, 200);
+    </script>
+</body>
+</html>

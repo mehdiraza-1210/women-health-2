@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Patient Resources and Downloadable PDF Registration Forms for All About Women's Health LLC. Access educational health guides, birth control information, and intake paperwork.">
+    <link rel="canonical" href="https://allaboutwomenshealth.com/resources.html">
+    <title>Patient Resources & Forms | All About Women's Health LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        img { max-width: 100%; height: auto; display: block; }
+        
+        html { scroll-behavior: smooth; }
+
+        :root {
+            --primary: #320F2F;        /* Deep Burgundy/Plum */
+            --accent: #8E4B7A;         /* Rich Orchid/Plum Accent */
+            --accent-hover: #783D67;   
+            --bg-linen: #FAF7F2;       /* Warm Linen Background */
+            --bg-lavender: #44293D;    /* Dark Creamish Plum */
+            --bg-card: #FFFFFF;        
+            --text-dark: #320F2F;      
+            --text-muted: #66525C;     
+            --text-light: #FFFFFF;     
+            --font-serif: 'Cormorant Garamond', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', Helvetica, Arial, sans-serif;
+            --transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+            --shadow-subtle: 0 10px 30px rgba(50, 15, 47, 0.05);
+            --shadow-hover: 0 20px 40px rgba(50, 15, 47, 0.12);
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--text-dark);
+            background-color: var(--bg-linen);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        h1, h2, h3, h4, .serif-font {
+            font-family: var(--font-serif);
+            font-weight: 600;
+            line-height: 1.25;
+        }
+
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        button { cursor: pointer; border: none; background: none; font-family: var(--font-sans); }
+
+        /* Keyframe Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 0 0 rgba(142, 75, 122, 0.3); }
+            70% { box-shadow: 0 0 0 12px rgba(142, 75, 122, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(142, 75, 122, 0); }
+        }
+
+        .animate-fade-1 { animation: fadeInUp 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+        .animate-fade-2 { animation: fadeInUp 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+        .animate-fade-3 { animation: fadeInUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+
+        /* Unified Header Navigation */
+        header {
+            background-color: rgba(250, 247, 242, 0.96);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(50, 15, 47, 0.06);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .brand-logo-img {
+            height: 44px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--text-dark);
+            padding: 4px 0;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent);
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--accent);
+            border-radius: 2px;
+        }
+
+        .btn-pill {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--text-light);
+            border-radius: 50px;
+            padding: 8px 18px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            box-shadow: 0 4px 12px rgba(142, 75, 122, 0.25);
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+        }
+
+        .btn-pill:hover, .btn-pill:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 22px rgba(142, 75, 122, 0.4);
+            background-color: var(--accent-hover);
+        }
+
+        /* Page Hero Header */
+        .page-header {
+            padding: 70px 0 45px 0;
+            text-align: center;
+        }
+
+        .resource-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(142, 75, 122, 0.08);
+            border: 1px solid rgba(142, 75, 122, 0.2);
+            color: var(--accent);
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            animation: pulseGlow 3s infinite;
+        }
+
+        .page-title {
+            font-size: 46px;
+            color: var(--primary);
+            margin-bottom: 14px;
+            letter-spacing: -0.01em;
+        }
+
+        .page-lead {
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto;
+            font-size: 15.5px;
+            line-height: 1.7;
+        }
+
+        /* Forms Grid (4 Download Cards) */
+        .forms-grid-4 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-bottom: 70px;
+        }
+
+        .form-download-card {
+            background-color: var(--bg-card);
+            border-radius: 18px;
+            padding: 32px;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid rgba(50, 15, 47, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            transition: var(--transition);
+        }
+
+        .form-download-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(142, 75, 122, 0.2);
+        }
+
+        .form-icon-bubble {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(142, 75, 122, 0.1), rgba(50, 15, 47, 0.05));
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .form-title {
+            font-size: 18px;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .form-desc {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .btn-download-pdf {
+            background-color: var(--accent);
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            white-space: nowrap;
+            box-shadow: 0 4px 12px rgba(142, 75, 122, 0.2);
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-download-pdf:hover {
+            background-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(50, 15, 47, 0.25);
+        }
+
+        /* Educational Guides 6 Grid Cards */
+        .guides-grid-6 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-bottom: 70px;
+        }
+
+        .guide-card {
+            background-color: var(--bg-card);
+            border-radius: 18px;
+            padding: 32px 24px;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid rgba(50, 15, 47, 0.05);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .guide-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(142, 75, 122, 0.15);
+        }
+
+        .guide-tag {
+            font-size: 11px;
+            font-weight: 800;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            background: rgba(142, 75, 122, 0.08);
+            padding: 4px 12px;
+            border-radius: 20px;
+            width: fit-content;
+            margin-bottom: 14px;
+        }
+
+        .guide-title {
+            font-size: 20px;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .guide-text {
+            font-size: 13.5px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        /* Dark Plum Action Banner */
+        .resource-cta-banner {
+            background-color: #44293D;
+            background: linear-gradient(135deg, #320F2F 0%, #44293D 100%);
+            color: #FFFFFF;
+            border-radius: 20px;
+            padding: 50px 40px;
+            text-align: center;
+            margin-bottom: 80px;
+            box-shadow: 0 15px 35px rgba(50, 15, 47, 0.2);
+        }
+
+        .cta-banner-title {
+            font-size: 32px;
+            color: #FFFFFF !important;
+            margin-bottom: 12px;
+        }
+
+        .cta-banner-text {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.9) !important;
+            max-width: 600px;
+            margin: 0 auto 28px auto;
+        }
+
+        .cta-buttons-flex {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            padding: 80px 0 40px 0;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 13px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(50, 15, 47, 0.6);
+            backdrop-filter: blur(5px);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-container {
+            background-color: var(--bg-linen);
+            border-radius: 16px;
+            width: 90%;
+            max-width: 520px;
+            padding: 40px;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 26px;
+            color: var(--primary);
+        }
+
+        .form-group { margin-bottom: 18px; }
+        .form-label { display: block; font-size: 11px; font-weight: 700; text-transform: uppercase; margin-bottom: 6px; color: var(--primary); }
+        .form-input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(50,15,47,0.15); font-family: var(--font-sans); }
+        .btn-submit { width: 100%; background-color: var(--primary); color: #fff; padding: 14px; border-radius: 30px; font-weight: 700; font-size: 12px; text-transform: uppercase; }
+
+        @media (max-width: 900px) {
+            .forms-grid-4, .guides-grid-6, .footer-grid { grid-template-columns: 1fr; }
+            .page-title { font-size: 34px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Unified Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="All About Women's Health Homepage">
+                <img src="women-health-logo-transparent.png" alt="All About Women's Health Logo" class="brand-logo-img">
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="provider.html">Provider</a>
+                <a href="services.html">Services</a>
+                <a href="patients.html">Patients</a>
+                <a href="resources.html" class="active">Resources</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <button class="btn-pill" onclick="openBookingModal()">Book Appointment</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Header -->
+        <section class="page-header animate-fade-1">
+            <div class="resource-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                Patient Education & Registration
+            </div>
+            <h1 class="page-title">Patient Resource Library & Forms</h1>
+            <p class="page-lead">
+                Access trusted educational guides and convenient downloadable clinical intake forms. Prepare your paperwork prior to your appointment for a seamless check-in experience.
+            </p>
+        </section>
+
+        <!-- Downloadable Patient Forms (4 Cards Grid) -->
+        <section class="animate-fade-2">
+            <div style="text-align: center; margin-bottom: 36px;">
+                <h2 style="font-size: 32px; color: var(--primary);">Downloadable Patient Forms (PDF)</h2>
+                <p style="font-size: 14px; color: var(--text-muted);">Download, print, and complete these official practice forms before your visit:</p>
+            </div>
+
+            <div class="forms-grid-4">
+                <!-- Form Card 1 -->
+                <div class="form-download-card">
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <div class="form-icon-bubble">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><circle cx="12" cy="14" r="2"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="form-title">Registration Packet</h3>
+                            <p class="form-desc">Demographics, contact info & insurance (PDF)</p>
+                        </div>
+                    </div>
+                    <button class="btn-download-pdf" onclick="triggerDownload('New Patient Registration Packet')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        PDF
+                    </button>
+                </div>
+
+                <!-- Form Card 2 -->
+                <div class="form-download-card">
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <div class="form-icon-bubble">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="form-title">Medical History</h3>
+                            <p class="form-desc">Health history & medications list (PDF)</p>
+                        </div>
+                    </div>
+                    <button class="btn-download-pdf" onclick="triggerDownload('Medical History Questionnaire')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        PDF
+                    </button>
+                </div>
+
+                <!-- Form Card 3 -->
+                <div class="form-download-card">
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <div class="form-icon-bubble">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="form-title">HIPAA Consent</h3>
+                            <p class="form-desc">Privacy rights & communication policy (PDF)</p>
+                        </div>
+                    </div>
+                    <button class="btn-download-pdf" onclick="triggerDownload('HIPAA Privacy Acknowledgement')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        PDF
+                    </button>
+                </div>
+
+                <!-- Form Card 4 -->
+                <div class="form-download-card">
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <div class="form-icon-bubble">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="form-title">Records Release</h3>
+                            <p class="form-desc">Prior medical records transfer request (PDF)</p>
+                        </div>
+                    </div>
+                    <button class="btn-download-pdf" onclick="triggerDownload('Medical Records Release Form')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        PDF
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational Guides 6 Cards Grid -->
+        <section class="animate-fade-3">
+            <div style="text-align: center; margin-bottom: 36px;">
+                <h2 style="font-size: 32px; color: var(--primary);">Women's Health Educational Library</h2>
+                <p style="font-size: 14px; color: var(--text-muted);">Empowering resources on preventive wellness, contraception, and maternal care:</p>
+            </div>
+
+            <div class="guides-grid-6">
+                <!-- Guide 1 -->
+                <div class="guide-card">
+                    <div>
+                        <span class="guide-tag">Screening Guidelines</span>
+                        <h3 class="guide-title">Preventive Care Roadmap</h3>
+                        <p class="guide-text">
+                            Learn about recommended screening intervals for Pap tests, mammograms, lipid panels, and bone density scans.
+                        </p>
+                    </div>
+                    <span style="font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase;">Preventive Health &bull; 4 min read</span>
+                </div>
+
+                <!-- Guide 2 -->
+                <div class="guide-card">
+                    <div>
+                        <span class="guide-tag">Contraception</span>
+                        <h3 class="guide-title">Birth Control Options Guide</h3>
+                        <p class="guide-text">
+                            Comprehensive overview comparing IUDs, subdermal arm implants (Nexplanon), oral contraceptives, and patches.
+                        </p>
+                    </div>
+                    <span style="font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase;">Family Planning &bull; 5 min read</span>
+                </div>
+
+                <!-- Guide 3 -->
+                <div class="guide-card">
+                    <div>
+                        <span class="guide-tag">Obstetrics</span>
+                        <h3 class="guide-title">Prenatal & Postpartum Support</h3>
+                        <p class="guide-text">
+                            Essential milestones for expectant mothers, trimester nutrition, gestational dating, and postpartum emotional care.
+                        </p>
+                    </div>
+                    <span style="font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase;">Pregnancy &bull; 6 min read</span>
+                </div>
+
+                <!-- Guide 4 -->
+                <div class="guide-card">
+                    <div>
+                        <span class="guide-tag">Menopause & Hormones</span>
+                        <h3 class="guide-title">Understanding BHRT & Menopause</h3>
+                        <p class="guide-text">
+                            Navigating perimenopause transitions, bioidentical hormone replacement therapy (BHRT), and osteoporosis protection.
+                        </p>
+                    </div>
+                    <span style="font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase;">Hormonal Health &bull; 5 min read</span>
+                </div>
+
+                <!-- Guide 5 -->
+                <div class="guide-card">
+                    <div>
+                        <span class="guide-tag">Adolescent Health</span>
+                        <h3 class="guide-title">First Gynecological Visit (13+)</h3>
+                        <p class="guide-text">
+                            A supportive guide for teens and parents explaining what to expect during initial wellness evaluations.
+                        </p>
+                    </div>
+                    <span style="font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase;">Youth Wellness &bull; 3 min read</span>
+                </div>
+
+                <!-- Guide 6 -->
+                <div class="guide-card">
+                    <div>
+                        <span class="guide-tag">Gynecologic Care</span>
+                        <h3 class="guide-title">PCOS & Endometriosis Overview</h3>
+                        <p class="guide-text">
+                            Recognizing symptoms of polycystic ovary syndrome (PCOS), pelvic pain, and modern diagnostic management options.
+                        </p>
+                    </div>
+                    <span style="font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase;">Clinical Gynecology &bull; 4 min read</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dark Plum Action Banner -->
+        <section class="resource-cta-banner">
+            <h2 class="cta-banner-title">Have Questions About Patient Registration?</h2>
+            <p class="cta-banner-text">
+                Our clinical administrative team is ready to assist you. Contact our office for form assistance or appointment scheduling.
+            </p>
+            <div class="cta-buttons-flex">
+                <a href="contact.html" class="btn-pill" style="padding: 12px 28px; font-size: 12px;">Contact Office Team</a>
+                <button class="btn-pill" onclick="openBookingModal()" style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); padding: 12px 28px; font-size: 12px;">Book Appointment</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                    <img src="women-health-tree-icon.png" alt="Logo Icon" style="width: 44px;">
+                    <span style="font-weight: 700; color: #fff; font-size: 12px;">ALL ABOUT WOMENS HEALTH LLC</span>
+                </div>
+                <p>Caring for Women. Empowering Health. Inspiring Wellness.</p>
+                <p style="font-size: 12px; margin-top: 10px; color: rgba(255,255,255,0.5);">Address: 133 Main St. Suite 101, Bowie, MD 20715<br>Phone: (301) 555-4567 | Serving MD, DC & VA</p>
+            </div>
+
+            <div>
+                <h4 style="color: #fff; margin-bottom: 16px;">Office Hours</h4>
+                <p>Mon - Fri: 9:00 AM – 5:00 PM<br>Saturday: 10:00 AM – 2:00 PM<br>Sunday: Closed</p>
+            </div>
+
+            <div>
+                <h4 style="color: #fff; margin-bottom: 16px;">Quick Links</h4>
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <a href="index.html" style="color: rgba(255,255,255,0.7);">Home</a>
+                    <a href="about.html" style="color: rgba(255,255,255,0.7);">About Us</a>
+                    <a href="provider.html" style="color: rgba(255,255,255,0.7);">Meet Dr. Mispa Afueh</a>
+                    <a href="patients.html" style="color: rgba(255,255,255,0.7);">New Patients Info</a>
+                    <a href="contact.html" style="color: rgba(255,255,255,0.7);">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <div>&copy; 2026 All About Women's Health LLC. All rights reserved.</div>
+            <div>Built for WCAG 2.1 AA Accessibility & HIPAA Compliance.</div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeBookingModal()">&times;</button>
+            <h3 class="serif-font" style="font-size: 26px; color: var(--primary); text-align: center; margin-bottom: 6px;">Schedule Appointment</h3>
+            <p style="font-size: 13px; color: var(--text-muted); text-align: center; margin-bottom: 24px;">Complete the form below to secure your clinical consultation.</p>
+            <form id="appointmentForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label class="form-label" for="fullName">Full Name</label>
+                    <input type="text" id="fullName" class="form-input" required placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email Address</label>
+                    <input type="email" id="email" class="form-input" required placeholder="jane@example.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-input" required placeholder="(301) 555-0199">
+                </div>
+                <button type="submit" class="btn-submit">Request Appointment Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const bookingModal = document.getElementById("bookingModal");
+        function openBookingModal() { bookingModal.classList.add("active"); }
+        function closeBookingModal() { bookingModal.classList.remove("active"); }
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            alert("Thank you! Your appointment request has been submitted. Our office will contact you shortly.");
+            closeBookingModal();
+        }
+
+        function triggerDownload(formName) {
+            alert(`Downloading official PDF document: ${formName}. Please complete and bring to your visit.`);
+        }
+
+        // --- Front-End Inspection & Copy Protection ---
+        document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+        document.addEventListener('dragstart', function(e) { e.preventDefault(); });
+        document.addEventListener('keydown', function(e) {
+            if (
+                e.keyCode === 123 || 
+                (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) || 
+                (e.ctrlKey && (e.keyCode === 85 || e.keyCode === 83))
+            ) {
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        // Anti-DevTools Debugger Trap
+        setInterval(function() {
+            (function() { return false; })['constructor']('debugger')['call']();
+        }, 200);
+    </script>
+</body>
+</html>
