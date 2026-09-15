@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,12 +33,17 @@
             --shadow-hover: 0 20px 40px rgba(50, 15, 47, 0.12);
         }
 
+        html, body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
         body {
             font-family: var(--font-sans);
             color: var(--text-dark);
             background-color: var(--bg-linen);
             line-height: 1.6;
-            overflow-x: hidden;
         }
 
                 .container {
@@ -468,8 +473,30 @@
             .page-title { font-size: 34px; }
         }
         @media (max-width: 768px) {
-            .cta-banner { padding: 36px 20px; }
+            .btn-pill {
+                white-space: normal;
+                text-align: center;
+                max-width: 100%;
+            }
+            .resource-cta-banner {
+                padding: 36px 20px;
+                margin-bottom: 50px;
+                border-radius: 16px;
+            }
             .cta-banner-title { font-size: 26px; }
+            .cta-buttons-flex {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+                width: 100%;
+            }
+            .cta-buttons-flex .btn-pill {
+                width: 100%;
+                max-width: 320px;
+                padding: 12px 18px !important;
+                box-sizing: border-box;
+                text-align: center;
+            }
             .footer-bottom { flex-direction: column; text-align: center; gap: 12px; }
             .mobile-menu-btn { display: flex; }
             .nav-links {
@@ -500,6 +527,7 @@
             }
         }
         @media (max-width: 480px) {
+            .page-title { font-size: 28px; }
             .modal-container { padding: 30px 20px; width: 94%; }
         }
     </style>

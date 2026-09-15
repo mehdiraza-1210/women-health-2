@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -660,6 +660,17 @@
                 line-height: 1.6;
                 margin-bottom: 24px;
             }
+            .btn-pill {
+                white-space: normal;
+                text-align: center;
+                max-width: 100%;
+            }
+            .provider-cta-banner .btn-pill {
+                width: 100%;
+                max-width: 340px;
+                padding: 12px 18px !important;
+                box-sizing: border-box;
+            }
 
             .expertise-grid-9 { grid-template-columns: 1fr; gap: 16px; margin-bottom: 40px; }
             .expertise-card { padding: 22px 18px; }
@@ -1051,7 +1062,7 @@
             <p class="cta-banner-text">
                 Experience personalized, compassionate healthcare tailored to your unique wellness goals.
             </p>
-            <div>
+            <div style="display: flex; justify-content: center; width: 100%;">
                 <button class="btn-pill" onclick="openBookingModal()" style="padding: 12px 30px; font-size: 12px;">Request Clinical Appointment</button>
             </div>
         </section>

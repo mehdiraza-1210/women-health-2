@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -493,7 +493,24 @@
             .values-grid-8 { grid-template-columns: 1fr; }
         }
         @media (max-width: 768px) {
-            .cta-banner { padding: 36px 20px; }
+            .btn-pill {
+                white-space: normal;
+                text-align: center;
+                max-width: 100%;
+            }
+            .statement-banner {
+                padding: 36px 20px;
+                margin-bottom: 50px;
+                border-radius: 16px;
+            }
+            .statement-banner .btn-pill {
+                width: 100%;
+                max-width: 320px;
+                padding: 12px 18px !important;
+                box-sizing: border-box;
+                text-align: center;
+            }
+            .statement-quote { font-size: 20px; }
             .cta-banner-title { font-size: 26px; }
             .footer-bottom { flex-direction: column; text-align: center; gap: 12px; }
             .mobile-menu-btn { display: flex; }
@@ -695,7 +712,7 @@
             <blockquote class="statement-quote">
                 "At All About Women's Health LLC, every patient is treated with dignity, respect, and individualized attention in a safe and supportive environment."
             </blockquote>
-            <div style="margin-top: 24px;">
+            <div style="margin-top: 24px; display: flex; justify-content: center; width: 100%;">
                 <a href="/provider/" class="btn-pill" style="padding: 12px 28px; font-size: 12px;">Meet Dr. Mispa Afueh, DNP &rarr;</a>
             </div>
         </section>

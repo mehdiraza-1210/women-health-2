@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,12 +33,17 @@
             --shadow-hover: 0 20px 40px rgba(50, 15, 47, 0.12);
         }
 
+        html, body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
         body {
             font-family: var(--font-sans);
             color: var(--text-dark);
             background-color: var(--bg-linen);
             line-height: 1.6;
-            overflow-x: hidden;
         }
 
                 .container {
@@ -489,8 +494,33 @@
             .service-img-wrapper { min-height: 280px; }
         }
         @media (max-width: 768px) {
-            .cta-banner { padding: 36px 20px; }
+            .btn-pill {
+                white-space: normal;
+                text-align: center;
+                max-width: 100%;
+            }
+            .services-cta-banner {
+                padding: 36px 20px;
+                margin-bottom: 50px;
+                border-radius: 16px;
+            }
+            .services-cta-banner .btn-pill {
+                width: 100%;
+                max-width: 340px;
+                padding: 12px 18px !important;
+                box-sizing: border-box;
+            }
             .cta-banner-title { font-size: 26px; }
+            .service-detail-body { padding: 24px 18px; }
+            .service-detail-body .btn-pill {
+                width: 100%;
+                max-width: 320px;
+                text-align: center;
+                box-sizing: border-box;
+            }
+            .service-h2 { font-size: 24px; }
+            .quick-nav-bar { gap: 8px; margin-bottom: 35px; }
+            .quick-nav-btn { font-size: 11px; padding: 7px 13px; }
             .footer-bottom { flex-direction: column; text-align: center; gap: 12px; }
             .mobile-menu-btn { display: flex; }
             .nav-links {
@@ -521,6 +551,7 @@
             }
         }
         @media (max-width: 480px) {
+            .page-title { font-size: 28px; }
             .modal-container { padding: 30px 20px; width: 94%; }
         }
     </style>
@@ -785,7 +816,7 @@
             <p class="cta-banner-text">
                 Schedule a comprehensive consultation with Dr. Mispa Afueh, DNP today. We're here to empower your health and well-being.
             </p>
-            <div>
+            <div style="display: flex; justify-content: center; width: 100%;">
                 <button class="btn-pill" onclick="openBookingModal()" style="padding: 12px 30px; font-size: 12px;">Book Your Clinical Consultation Now</button>
             </div>
         </section>

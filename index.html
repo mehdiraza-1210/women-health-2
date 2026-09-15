@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -635,6 +635,18 @@
         }
 
         @media (max-width: 768px) {
+            .btn-pill {
+                white-space: normal;
+                text-align: center;
+                max-width: 100%;
+            }
+            .hero-content .btn-pill {
+                width: 100%;
+                max-width: 320px;
+                padding: 12px 18px !important;
+                box-sizing: border-box;
+                text-align: center;
+            }
             .hero { padding: 36px 0; }
             .hero-title { font-size: 32px; }
             .hero-photo-img { height: 260px; }
@@ -668,10 +680,10 @@
             }
             .why-grid-6, .services-grid-6 { grid-template-columns: repeat(2, 1fr); }
             .footer-grid { grid-template-columns: 1fr; }
-            .hero-title { font-size: 36px; }
         }
 
         @media (max-width: 500px) {
+            .hero-title { font-size: 28px; }
             .why-grid-6, .services-grid-6 { grid-template-columns: 1fr; }
         }
         @media (max-width: 480px) {
