@@ -311,6 +311,8 @@
             font-weight: 700;
             color: var(--primary);
             margin-bottom: 4px;
+            word-break: break-word;
+            overflow-wrap: anywhere;
         }
 
         .info-card-sub {
@@ -462,18 +464,23 @@
             .page-title { font-size: 34px; }
             .contact-box { padding: 28px; }
         }
-
-        @media (max-width: 500px) {
-            .info-cards-grid-4 { grid-template-columns: 1fr; }
-            .contact-box { padding: 24px 18px; }
-            .page-title { font-size: 28px; }
-        }
         @media (max-width: 768px) {
             .btn-pill {
                 white-space: normal;
                 text-align: center;
                 max-width: 100%;
             }
+            .info-cards-grid-4 { grid-template-columns: 1fr; gap: 14px; }
+            .info-card { padding: 20px 16px; }
+            .contact-box { padding: 24px 18px; }
+            .contact-box-title { font-size: 24px; }
+            .emergency-banner {
+                padding: 14px 16px;
+                font-size: 13px;
+                text-align: left;
+                gap: 10px;
+            }
+            .emergency-banner svg { flex-shrink: 0; }
             .footer-bottom { flex-direction: column; text-align: center; gap: 12px; }
             .mobile-menu-btn { display: flex; }
             .nav-links {
@@ -504,6 +511,7 @@
             }
         }
         @media (max-width: 480px) {
+            .page-title { font-size: 28px; }
             .modal-container { padding: 30px 20px; width: 94%; }
         }
     </style>
