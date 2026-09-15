@@ -107,11 +107,24 @@
             -moz-osx-font-smoothing: grayscale;
         }
 
-        .container {
+                .container {
             width: 100%;
-            max-width: 1200px;
+            max-width: 1440px;
             margin: 0 auto;
-            padding: 0 24px;
+            padding: 0 40px;
+        }
+
+        @media (min-width: 1800px) {
+            .container {
+                max-width: 1620px;
+                padding: 0 60px;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                padding: 0 24px;
+            }
         }
 
         h1, h2, h3, h4, .serif-font {
@@ -311,7 +324,7 @@
             color: var(--text-light-muted);
             line-height: 1.7;
             margin-bottom: 28px;
-            max-width: 540px;
+            max-width: 620px;
         }
 
         .hero-card-frame {
@@ -325,7 +338,7 @@
 
         .hero-photo-img {
             width: 100%;
-            height: 420px;
+            height: 480px;
             object-fit: cover;
             object-position: center;
             display: block;
@@ -663,6 +676,9 @@
         }
         @media (max-width: 480px) {
             .modal-container { padding: 30px 20px; width: 94%; }
+        }        @media (min-width: 1600px) {
+            .hero-title { font-size: 52px; }
+            .hero-photo-img { height: 530px; }
         }
     </style>
 </head>
