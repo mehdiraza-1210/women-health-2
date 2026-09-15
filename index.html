@@ -269,68 +269,71 @@
         /* Hero Section */
         .hero {
             background-color: var(--bg-lavender);
-            padding: 0;
+            padding: 55px 0;
             overflow: hidden;
             color: var(--text-light);
+            position: relative;
         }
 
         .hero-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: stretch;
-            min-height: calc(100vh - 70px);
-            width: 100%;
-        }
-
-        .hero-content-wrapper {
-            display: flex;
-            justify-content: flex-end;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 48px;
             align-items: center;
-            padding-top: 60px;
-            padding-bottom: 60px;
-            padding-left: max(24px, calc((100vw - 1200px) / 2 + 24px));
-            padding-right: 48px;
-            z-index: 2;
         }
 
         .hero-content {
-            width: 100%;
-            max-width: 560px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
         }
 
         .hero-title {
-            font-size: 48px;
+            font-size: 46px;
             line-height: 1.18;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
             color: var(--text-light);
+            font-weight: 500;
         }
 
         .hero-subtitle {
-            font-size: 16px;
-            font-weight: 500;
-            color: var(--text-light-muted);
-            margin-bottom: 20px;
+            font-size: 15px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 18px;
             letter-spacing: 0.05em;
+            text-transform: uppercase;
         }
 
         .hero-desc {
-            font-size: 14.5px;
+            font-size: 15px;
             color: var(--text-light-muted);
             line-height: 1.7;
-            margin-bottom: 32px;
-            max-width: 520px;
+            margin-bottom: 28px;
+            max-width: 540px;
         }
 
-        .hero-image-container {
+        .hero-card-frame {
             position: relative;
-            background-image: url('https://allaboutwomenshealth.com/wp-content/uploads/2026/09/hero_consultation.jpg');
-            background-size: cover;
-            background-position: center;
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: 0 20px 45px rgba(25, 8, 23, 0.35);
+            border: 5px solid rgba(255, 255, 255, 0.18);
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .hero-photo-img {
             width: 100%;
-            height: 100%;
-            min-height: 500px;
-            mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 14%);
-            -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 14%);
+            height: 420px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .hero-card-frame:hover .hero-photo-img {
+            transform: scale(1.02);
         }
 
         /* Sections */
@@ -610,27 +613,18 @@
         .btn-submit { width: 100%; background-color: var(--primary); color: #fff; padding: 14px; border-radius: 30px; font-weight: 700; font-size: 12px; text-transform: uppercase; }
 
         @media (max-width: 1024px) {
-            .hero-grid { grid-template-columns: 1fr; min-height: auto; }
-            .hero-content-wrapper {
-                justify-content: flex-start;
-                padding: 60px 24px 40px 24px;
-            }
-            .hero-content { max-width: 100%; }
-            .hero-image-container {
-                height: 380px;
-                min-height: 380px;
-                mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 16%);
-                -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 16%);
-            }
+            .hero { padding: 45px 0; }
+            .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+            .hero-photo-img { height: 360px; }
             .provider-grid { grid-template-columns: 1fr; }
             .why-grid-6 { grid-template-columns: repeat(3, 1fr); gap: 20px; }
             .services-grid-6 { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (max-width: 768px) {
-            .hero-content-wrapper { padding: 40px 20px 30px 20px; }
-            .hero-title { font-size: 34px; }
-            .hero-image-container { height: 280px; min-height: 280px; }
+            .hero { padding: 36px 0; }
+            .hero-title { font-size: 32px; }
+            .hero-photo-img { height: 260px; }
             .footer-bottom { flex-direction: column; text-align: center; gap: 12px; }
             .mobile-menu-btn { display: flex; }
             .nav-links {
@@ -702,18 +696,18 @@
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <div class="hero-grid">
-                <div class="hero-content-wrapper">
-                    <div class="hero-content">
-                        <h1 class="hero-title">Compassionate Women's Healthcare for Every Stage of Life</h1>
-                        <p class="hero-subtitle">Personalized. Preventive. Professional.</p>
-                        <p class="hero-desc">
-                            At All About Women's Health LLC, we provide comprehensive, evidence-based healthcare tailored to the unique needs of women ages 13 and beyond. Our goal is to empower every patient through compassionate care and personalized treatment.
-                        </p>
-                        <button class="btn-pill" onclick="openBookingModal()">Schedule Your Appointment Today</button>
-                    </div>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">Compassionate Women's Healthcare for Every Stage of Life</h1>
+                    <p class="hero-subtitle">Personalized. Preventive. Professional.</p>
+                    <p class="hero-desc">
+                        At All About Women's Health LLC, we provide comprehensive, evidence-based healthcare tailored to the unique needs of women ages 13 and beyond. Our goal is to empower every patient through compassionate care and personalized treatment.
+                    </p>
+                    <button class="btn-pill" onclick="openBookingModal()">Schedule Your Appointment Today</button>
                 </div>
-                <div class="hero-image-container" role="img" aria-label="Doctor consulting with a patient"></div>
+                <div class="hero-card-frame">
+                    <img src="https://allaboutwomenshealth.com/wp-content/uploads/2026/09/hero_consultation.jpg" alt="Doctor consulting with a patient at All About Women's Health" class="hero-photo-img" fetchpriority="high" loading="eager" width="1264" height="848">
+                </div>
             </div>
         </section>
 
