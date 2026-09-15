@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -149,6 +149,40 @@
             transform: translateY(-2px);
             box-shadow: 0 8px 22px rgba(142, 75, 122, 0.4);
             background-color: var(--accent-hover);
+        }
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            width: 32px;
+            height: 32px;
+            z-index: 10001;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 24px;
+            height: 2.5px;
+            background-color: var(--primary);
+            border-radius: 2px;
+            transition: var(--transition);
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: translateY(7.5px) rotate(45deg);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: translateY(-7.5px) rotate(-45deg);
         }
 
         /* Hero Header */
@@ -438,6 +472,35 @@
             .service-detail-body { padding: 28px; }
             .service-img-wrapper { min-height: 280px; }
         }
+        @media (max-width: 768px) {
+            .mobile-menu-btn { display: flex; }
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 82%;
+                max-width: 320px;
+                height: 100vh;
+                height: 100dvh;
+                background-color: var(--bg-linen);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 22px;
+                padding: 40px 24px;
+                box-shadow: -10px 0 35px rgba(50, 15, 47, 0.18);
+                transform: translateX(105%);
+                visibility: hidden;
+                pointer-events: none;
+                transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.35s ease;
+                z-index: 10000;
+            }
+            .nav-links.active {
+                transform: translateX(0);
+                visibility: visible;
+                pointer-events: auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -448,6 +511,10 @@
             <a href="/" class="logo" aria-label="All About Women's Health Homepage">
                 <img src="https://allaboutwomenshealth.com/wp-content/uploads/2026/09/women-health-logo-transparent.png" alt="All About Women's Health Logo" class="brand-logo-img">
             </a>
+
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
 
             <nav class="nav-links">
                 <a href="/">Home</a>
@@ -789,6 +856,29 @@
         setInterval(function() {
             (function() { return false; })['constructor']('debugger')['call']();
         }, 200);
+        const menuBtn = document.querySelector(".mobile-menu-btn");
+        const navLinks = document.querySelector(".nav-links");
+        if (menuBtn && navLinks) {
+            menuBtn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                menuBtn.classList.toggle("active");
+                navLinks.classList.toggle("active");
+            });
+
+            navLinks.querySelectorAll("a, button").forEach(item => {
+                item.addEventListener("click", () => {
+                    menuBtn.classList.remove("active");
+                    navLinks.classList.remove("active");
+                });
+            });
+
+            document.addEventListener("click", (e) => {
+                if (navLinks.classList.contains("active") && !navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
+                    menuBtn.classList.remove("active");
+                    navLinks.classList.remove("active");
+                }
+            });
+        }
     </script>
 </body>
 </html>
