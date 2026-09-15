@@ -423,6 +423,9 @@
             border-radius: 16px;
             width: 90%;
             max-width: 520px;
+            max-height: 90vh;
+            max-height: 90dvh;
+            overflow-y: auto;
             padding: 40px;
             position: relative;
         }
@@ -443,9 +446,11 @@
         }
 
         @media (max-width: 500px) {
-            .info-cards-grid-4 { grid-template-columns: 1fr; }
+            .info-cards-grid-4 { grid-template-columns: 1fr;     .contact-box { padding: 24px 18px; }
+        }
         }
         @media (max-width: 768px) {
+            .footer-bottom { flex-direction: column; text-align: center; gap: 12px; }
             .mobile-menu-btn { display: flex; }
             .nav-links {
                 position: fixed;
@@ -473,6 +478,9 @@
                 visibility: visible;
                 pointer-events: auto;
             }
+        }
+        @media (max-width: 480px) {
+            .modal-container { padding: 30px 20px; width: 94%; }
         }
     </style>
 </head>
